@@ -1,0 +1,73 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/zsum3_lm_bigG_blip__overall.json",
+  "base_corpus_cider": 1.1130726251150918,
+  "n_images": 1000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/stack6_all_equal__overall.json": {
+      "corpus_cider": 1.1303978538953336,
+      "mean_diff": 0.017325228780241914,
+      "ci95": [
+        -0.00272280013673635,
+        0.037091875648089044
+      ],
+      "p_one_sided": 0.0442,
+      "frac_images_improved": 0.243,
+      "frac_changed": 0.425
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+      "corpus_cider": 1.133808391409097,
+      "mean_diff": 0.02073576629400527,
+      "ci95": [
+        -0.002239935193019045,
+        0.043399099887063475
+      ],
+      "p_one_sided": 0.0374,
+      "frac_images_improved": 0.322,
+      "frac_changed": 0.589
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/stack4_zsum3_vqa__overall.json": {
+      "corpus_cider": 1.1307310006512206,
+      "mean_diff": 0.017658375536128777,
+      "ci95": [
+        0.0011651902178559778,
+        0.034696009521017715
+      ],
+      "p_one_sided": 0.017,
+      "frac_images_improved": 0.172,
+      "frac_changed": 0.291
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/stack4_zsum3_mbr__overall.json": {
+      "corpus_cider": 1.1023706154019555,
+      "mean_diff": -0.01070200971313638,
+      "ci95": [
+        -0.030009914942879634,
+        0.007820114166442507
+      ],
+      "p_one_sided": 0.8699,
+      "frac_images_improved": 0.168,
+      "frac_changed": 0.334
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/blip_top1__overall.json": {
+      "corpus_cider": 1.1072863603542993,
+      "mean_diff": -0.005786264760792568,
+      "ci95": [
+        -0.029278468027608313,
+        0.01852305429873444
+      ],
+      "p_one_sided": 0.6792,
+      "frac_images_improved": 0.278,
+      "frac_changed": 0.585
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_viecap/lm_top1__overall.json": {
+      "corpus_cider": 0.9674836885964255,
+      "mean_diff": -0.14558893651866617,
+      "ci95": [
+        -0.17555540490042945,
+        -0.11589580884148752
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.246,
+      "frac_changed": 0.711
+    }
+  }
+}

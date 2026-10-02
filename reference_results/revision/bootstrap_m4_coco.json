@@ -1,0 +1,29 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_five20__overall.json",
+  "base_corpus_cider": 1.2058583201182749,
+  "n_images": 5000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_five21__overall.json": {
+      "corpus_cider": 1.22291757595588,
+      "mean_diff": 0.017059255837604804,
+      "ci95": [
+        0.010342413116022915,
+        0.024118971281798744
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.0998,
+      "frac_changed": 0.1908
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/blip2cap__overall.json": {
+      "corpus_cider": 1.1044207849357353,
+      "mean_diff": -0.10143753518253976,
+      "ci95": [
+        -0.12089161915785299,
+        -0.08192087247313459
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.4316,
+      "frac_changed": 0.989
+    }
+  }
+}

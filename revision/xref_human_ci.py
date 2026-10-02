@@ -7,7 +7,7 @@ M2  paired bootstrap over images (10,000 resamples) of the recoverable headroom 
 Q4  the same protocol with SPICE as both selection and scoring metric (--spice, on a subsample)."""
 import argparse, json, os, sys
 import numpy as np
-sys.path.insert(0, os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.insert(0, os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "third_party", "evaluation")))
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from pycocoevalcap.cider.cider import Cider
 ap = argparse.ArgumentParser(); ap.add_argument("--beam_dump", required=True); ap.add_argument("--preds_dir", required=True)

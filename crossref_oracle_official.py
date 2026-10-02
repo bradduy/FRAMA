@@ -13,7 +13,7 @@ Run on GCP2 from IFCap/evaluation with rap_venv's python (Java 11 on PATH):
 """
 import argparse, json, os, sys
 import numpy as np
-sys.path.insert(0, os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.insert(0, os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party", "evaluation")))
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from pycocoevalcap.cider.cider import Cider
 

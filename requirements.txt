@@ -1,0 +1,8 @@
+# Selection rules and analysis (CPU). Tested with Python 3.11, numpy 2.4, scipy 1.17.
+numpy>=1.24
+scipy>=1.10
+# Imported by the IFCap evaluation toolkit fetched by setup_eval.sh, which also needs Java 11 on PATH;
+# Java 21 breaks the SPICE jar.
+matplotlib
+scikit-image
+ipdb

@@ -1,8 +1,8 @@
 """Paired bootstrap over images for CIDEr-D differences between prediction files,
 using the OFFICIAL tokenizer and scorer (IFCap evaluation/pycocoevalcap, Java 11).
 
-Run on GCP2 from IFCap/evaluation with rap_venv:
-  python ~/ZeroShotImageCap/macst_v1/v2_upgrade/paired_bootstrap_remote.py \
+Usage (COCOEVAL_DIR points to the IFCap evaluation toolkit, Java 11 on PATH):
+  python paired_bootstrap_remote.py \
       --base preds/coco/zsum3_lm_bigG_blip__overall.json \
       --cand preds/coco/stack6_all_equal__overall.json [more cand files] \
       --out bootstrap_coco.json
@@ -13,7 +13,7 @@ difference and a one-sided p-value for cand > base.
 import argparse, json, os, sys
 import numpy as np
 
-sys.path.insert(0, os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.insert(0, os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party", "evaluation")))
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from pycocoevalcap.cider.cider import Cider
 

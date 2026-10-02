@@ -1,0 +1,36 @@
+PTBTokenizer tokenized 36748 tokens at 179198.08 tokens per second.
+PTBTokenizer tokenized 3356 tokens at 38236.13 tokens per second.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.nustaq.serialization.FSTClazzInfo (file:/home/duy_tran10_onemount_com/ZeroShotImageCap/IFCap/evaluation/pycocoevalcap/spice/lib/fst-2.47.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.nustaq.serialization.FSTClazzInfo
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Parsing reference captions
+Parsing test captions
+Warning: Nashorn engine is planned to be removed from a future JDK release
+SPICE evaluation took: 2.406 s
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 2777, 'reflen': 2765, 'guess': [2777, 2487, 2197, 1907], 'correct': [1983, 935, 353, 133]}
+ratio: 1.0043399638332715
+Bleu_1: 0.714
+Bleu_2: 0.518
+Bleu_3: 0.351
+Bleu_4: 0.234
+computing METEOR score...
+METEOR: 0.215
+computing Rouge score...
+ROUGE_L: 0.473
+computing CIDEr score...
+CIDEr: 0.807
+computing SPICE score...
+SPICE: 0.095
+Bleu_1: 0.714
+Bleu_2: 0.518
+Bleu_3: 0.351
+Bleu_4: 0.234
+METEOR: 0.215
+ROUGE_L: 0.473
+CIDEr: 0.807
+SPICE: 0.095

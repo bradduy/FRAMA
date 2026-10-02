@@ -1,0 +1,84 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/zsum3_lm_bigG_blip__overall.json",
+  "base_corpus_cider": 0.6817357388901587,
+  "n_images": 1000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack6_all_equal__overall.json": {
+      "corpus_cider": 0.7050778647986606,
+      "mean_diff": 0.02334212590850202,
+      "ci95": [
+        0.009045397890027791,
+        0.03767529703712856
+      ],
+      "p_one_sided": 0.0003,
+      "frac_images_improved": 0.276,
+      "frac_changed": 0.468
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+      "corpus_cider": 0.721368608590368,
+      "mean_diff": 0.03963286970020939,
+      "ci95": [
+        0.02284119342223907,
+        0.05675841867912186
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.38,
+      "frac_changed": 0.652
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack4_noLM_blip_bigG_vqa_mbr__overall.json": {
+      "corpus_cider": 0.7106036698750287,
+      "mean_diff": 0.02886793098487,
+      "ci95": [
+        0.01177607958843189,
+        0.04688894545331263
+      ],
+      "p_one_sided": 0.0007,
+      "frac_images_improved": 0.355,
+      "frac_changed": 0.633
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack4_zsum3_vqa__overall.json": {
+      "corpus_cider": 0.7011840010947455,
+      "mean_diff": 0.019448262204586914,
+      "ci95": [
+        0.0048690801565742835,
+        0.0342759353578793
+      ],
+      "p_one_sided": 0.004,
+      "frac_images_improved": 0.205,
+      "frac_changed": 0.378
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack4_zsum3_mbr__overall.json": {
+      "corpus_cider": 0.6893049727922919,
+      "mean_diff": 0.007569233902133215,
+      "ci95": [
+        -0.006392257120770742,
+        0.021736647921713453
+      ],
+      "p_one_sided": 0.1407,
+      "frac_images_improved": 0.224,
+      "frac_changed": 0.387
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/blip_top1__overall.json": {
+      "corpus_cider": 0.666647516984803,
+      "mean_diff": -0.015088221905355841,
+      "ci95": [
+        -0.035504351933829656,
+        0.005133608378367538
+      ],
+      "p_one_sided": 0.9286,
+      "frac_images_improved": 0.366,
+      "frac_changed": 0.748
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/lm_top1__overall.json": {
+      "corpus_cider": 0.637116990326931,
+      "mean_diff": -0.044618748563227596,
+      "ci95": [
+        -0.06222461988538985,
+        -0.027605156255260103
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.265,
+      "frac_changed": 0.669
+    }
+  }
+}

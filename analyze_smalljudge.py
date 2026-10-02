@@ -33,6 +33,7 @@ def approx(score):
 def write(name, score):
     pick = score.argmax(1)
     recs = [{"image_name": beams[i]["image_name"], "captions": beams[i]["captions"], "prediction": cands[k][int(pick[k])]} for k, i in enumerate(sub)]
+    os.makedirs(os.path.join(HERE, "preds", "coco"), exist_ok=True)
     json.dump(recs, open(os.path.join(HERE, "preds", "coco", f"{name}__overall.json"), "w"))
 
 base3 = z(LM) + z(BG) + z(BL)

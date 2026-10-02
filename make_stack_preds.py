@@ -37,5 +37,6 @@ for bench in ("coco", "nocaps"):
         recs = [{"image_name": b["image_name"], "captions": b["captions"], "prediction": cands[i][int(pick[i])]} for i, b in enumerate(beams)]
         for sp in (["overall"] if bench == "coco" else ["overall", "out_domain"]):
             sel = recs if sp == "overall" else [r for r, b in zip(recs, beams) if b.get("split") == sp]
+            os.makedirs(os.path.join(HERE, "preds", bench), exist_ok=True)
             json.dump(sel, open(os.path.join(HERE, "preds", bench, f"{name}__{sp}.json"), "w"))
         print(f"{bench:7s} {name:40s} approxCIDEr={M[np.arange(N), pick].mean():.4f}")

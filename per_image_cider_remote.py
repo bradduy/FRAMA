@@ -2,7 +2,7 @@
 from those references). Run on GCP2 from IFCap/evaluation with rap_venv's python.
 Usage: python per_image_cider_remote.py --preds_dir <preds/coco> --rules lm_top1 borda3_lm_bigG_blip zsum3_lm_bigG_blip stack6_all_equal stack5_noLM_blip_bigG_vqa_mbr_ground --out per_image_cider_coco.json"""
 import argparse, json, os, sys
-sys.path.insert(0, os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.insert(0, os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party", "evaluation")))
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from pycocoevalcap.cider.cider import Cider
 ap = argparse.ArgumentParser(); ap.add_argument("--preds_dir", required=True); ap.add_argument("--rules", nargs="+", required=True); ap.add_argument("--out", required=True)

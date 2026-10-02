@@ -98,26 +98,27 @@ def evaluate(name, sigs, M, w, splits=None):
         print(s); out[agg] = v
     return out
 
-data = {b: load(b) for b in ("coco", "nocaps")}
-for bench, (feats, M, splits) in data.items():
-    print(f"\n===== {bench} =====")
-    sigs = [feats[..., 0], feats[..., 1], feats[..., 2]]  # LM, bigG, BLIP
-    sp = None if bench == "coco" else splits
-    equal = np.ones(3) / 3
-    evaluate("equal weights (baseline)", sigs, M, equal, sp)
-    w_spec, C, r = spectral_weights(sigs)
-    print(f"  mean pairwise Spearman among scorers: LM-bigG {C[0,1]:.3f}  LM-BLIP {C[0,2]:.3f}  bigG-BLIP {C[1,2]:.3f}; r={np.round(r,3)}")
-    evaluate("spectral (label-free, in-benchmark)", sigs, M, w_spec, sp)
-    w_em, d = mallows_em_weights(sigs)
-    print(f"  Mallows-EM dispersions d={np.round(d,3)}")
-    evaluate("Mallows-EM (label-free, in-benchmark)", sigs, M, w_em, sp)
-    other = "nocaps" if bench == "coco" else "coco"
-    osigs = [data[other][0][..., k] for k in range(3)]
-    w_spec_x, _, _ = spectral_weights(osigs); w_em_x, _ = mallows_em_weights(osigs)
-    evaluate(f"spectral fit on {other} (cross-bench)", sigs, M, w_spec_x, sp)
-    evaluate(f"Mallows-EM fit on {other} (cross-bench)", sigs, M, w_em_x, sp)
-    w_or = oracle_weights(osigs, data[other][1])
-    evaluate(f"ORACLE weights fit on {other} (upper bd)", sigs, M, w_or, sp)
-    w_or_in = oracle_weights(sigs, M)
-    evaluate("ORACLE weights in-benchmark (cheating)", sigs, M, w_or_in, sp)
-    print(f"  Oracle@20 ceiling ~{M.max(1).mean():.4f}")
+if __name__ == "__main__":
+    data = {b: load(b) for b in ("coco", "nocaps")}
+    for bench, (feats, M, splits) in data.items():
+        print(f"\n===== {bench} =====")
+        sigs = [feats[..., 0], feats[..., 1], feats[..., 2]]  # LM, bigG, BLIP
+        sp = None if bench == "coco" else splits
+        equal = np.ones(3) / 3
+        evaluate("equal weights (baseline)", sigs, M, equal, sp)
+        w_spec, C, r = spectral_weights(sigs)
+        print(f"  mean pairwise Spearman among scorers: LM-bigG {C[0,1]:.3f}  LM-BLIP {C[0,2]:.3f}  bigG-BLIP {C[1,2]:.3f}; r={np.round(r,3)}")
+        evaluate("spectral (label-free, in-benchmark)", sigs, M, w_spec, sp)
+        w_em, d = mallows_em_weights(sigs)
+        print(f"  Mallows-EM dispersions d={np.round(d,3)}")
+        evaluate("Mallows-EM (label-free, in-benchmark)", sigs, M, w_em, sp)
+        other = "nocaps" if bench == "coco" else "coco"
+        osigs = [data[other][0][..., k] for k in range(3)]
+        w_spec_x, _, _ = spectral_weights(osigs); w_em_x, _ = mallows_em_weights(osigs)
+        evaluate(f"spectral fit on {other} (cross-bench)", sigs, M, w_spec_x, sp)
+        evaluate(f"Mallows-EM fit on {other} (cross-bench)", sigs, M, w_em_x, sp)
+        w_or = oracle_weights(osigs, data[other][1])
+        evaluate(f"ORACLE weights fit on {other} (upper bd)", sigs, M, w_or, sp)
+        w_or_in = oracle_weights(sigs, M)
+        evaluate("ORACLE weights in-benchmark (cheating)", sigs, M, w_or_in, sp)
+        print(f"  Oracle@20 ceiling ~{M.max(1).mean():.4f}")

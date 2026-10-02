@@ -1,0 +1,73 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack6_all_equal__overall.json",
+  "base_corpus_cider": 0.7050778647986606,
+  "n_images": 1000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/loo_minus_bigG__overall.json": {
+      "corpus_cider": 0.6863493966138061,
+      "mean_diff": -0.018728468184854633,
+      "ci95": [
+        -0.029544533657941074,
+        -0.008258445841319921
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.118,
+      "frac_changed": 0.28
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/loo_minus_BLIP__overall.json": {
+      "corpus_cider": 0.691874888937767,
+      "mean_diff": -0.01320297586089365,
+      "ci95": [
+        -0.02102688360720534,
+        -0.005559517991152588
+      ],
+      "p_one_sided": 0.9998,
+      "frac_images_improved": 0.085,
+      "frac_changed": 0.238
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/loo_minus_VQA__overall.json": {
+      "corpus_cider": 0.6971229249284964,
+      "mean_diff": -0.007954939870164273,
+      "ci95": [
+        -0.02050499475764998,
+        0.004397207598461761
+      ],
+      "p_one_sided": 0.8943,
+      "frac_images_improved": 0.162,
+      "frac_changed": 0.32
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/loo_minus_MBR__overall.json": {
+      "corpus_cider": 0.7139219222063846,
+      "mean_diff": 0.008844057407723895,
+      "ci95": [
+        -0.0034946494855483995,
+        0.02154077440907788
+      ],
+      "p_one_sided": 0.0809,
+      "frac_images_improved": 0.166,
+      "frac_changed": 0.339
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/loo_minus_ground__overall.json": {
+      "corpus_cider": 0.6959572338943874,
+      "mean_diff": -0.009120630904273314,
+      "ci95": [
+        -0.018723433073727234,
+        0.00046876618880986294
+      ],
+      "p_one_sided": 0.9698,
+      "frac_images_improved": 0.093,
+      "frac_changed": 0.222
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/flickr/stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+      "corpus_cider": 0.721368608590368,
+      "mean_diff": 0.01629074379170737,
+      "ci95": [
+        0.003040408022165144,
+        0.029801529614081407
+      ],
+      "p_one_sided": 0.0077,
+      "frac_images_improved": 0.219,
+      "frac_changed": 0.43
+    }
+  }
+}

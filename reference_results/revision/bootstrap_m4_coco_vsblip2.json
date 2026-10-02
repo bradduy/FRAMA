@@ -1,0 +1,18 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/blip2cap__overall.json",
+  "base_corpus_cider": 1.1044207849357353,
+  "n_images": 5000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_five21__overall.json": {
+      "corpus_cider": 1.22291757595588,
+      "mean_diff": 0.11849679102014457,
+      "ci95": [
+        0.10054163188628185,
+        0.13672366697888422
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.5206,
+      "frac_changed": 0.8942
+    }
+  }
+}

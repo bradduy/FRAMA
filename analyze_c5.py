@@ -52,6 +52,7 @@ print(f"ViECap COCO subsample: N={N} K={K}")
 for name, s in rules.items():
     pick = s.argmax(1)
     recs = [{"image_name": b["image_name"], "captions": b["captions"], "prediction": cands[i][int(pick[i])]} for i, b in enumerate(beams)]
+    os.makedirs(os.path.join(HERE, "preds", "coco_viecap"), exist_ok=True)
     json.dump(recs, open(os.path.join(HERE, "preds", "coco_viecap", f"{name}__overall.json"), "w"))
     print(f"viecap  {name:40s} approxCIDEr={M[idx, pick].mean():.4f}")
 from scipy.stats import spearmanr
@@ -64,5 +65,6 @@ for name in rules:
     if not os.path.exists(src): continue
     sub = [r for r in json.load(open(src)) if r["image_name"] in keep]
     assert len(sub) == N, (name, len(sub))
+    os.makedirs(os.path.join(HERE, "preds", "coco_ifcapsub"), exist_ok=True)
     json.dump(sub, open(os.path.join(HERE, "preds", "coco_ifcapsub", f"{name}__overall.json"), "w"))
 print("wrote IFCap subsample rows for", len(rules), "rules")

@@ -1,0 +1,15 @@
+# Agent scorers (GPU): csfn_extract_features.py, blip2vqa_scorer.py, detector_ground_scorer.py,
+# frozen_scorer.py, smallvlm_yesprob_scorer.py and the revision/ scorers.
+# Versions used for every number in the paper (Python 3.11, CUDA 12.1, 2x Tesla T4).
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.57.6
+open_clip_torch==3.3.0
+accelerate==1.14.0
+huggingface_hub==0.36.2
+safetensors==0.8.0
+pillow==12.3.0
+nltk==3.10.3
+tqdm==4.68.4
+numpy==2.4.6
+scipy==1.17.1

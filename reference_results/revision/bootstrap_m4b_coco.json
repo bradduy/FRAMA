@@ -1,0 +1,73 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_five21__overall.json",
+  "base_corpus_cider": 1.22291757595588,
+  "n_images": 5000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_blip21__overall.json": {
+      "corpus_cider": 1.1743516980348645,
+      "mean_diff": -0.04856587792101507,
+      "ci95": [
+        -0.062323844070090104,
+        -0.0350060807734027
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.3278,
+      "frac_changed": 0.7702
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_bigG21__overall.json": {
+      "corpus_cider": 1.132074125028836,
+      "mean_diff": -0.09084345092704377,
+      "ci95": [
+        -0.10323927749058294,
+        -0.07821471738677813
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.2812,
+      "frac_changed": 0.7556
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_s1_21__overall.json": {
+      "corpus_cider": 1.1505074935858388,
+      "mean_diff": -0.07241008237004086,
+      "ci95": [
+        -0.08743384047777922,
+        -0.05775742576117742
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.345,
+      "frac_changed": 0.8088
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_align2_21__overall.json": {
+      "corpus_cider": 1.167829768621249,
+      "mean_diff": -0.05508780733463084,
+      "ci95": [
+        -0.06692999517368153,
+        -0.04332269281684706
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.2758,
+      "frac_changed": 0.6848
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_align2s1_21__overall.json": {
+      "corpus_cider": 1.1901471015957281,
+      "mean_diff": -0.032770474360151784,
+      "ci95": [
+        -0.04399852923722633,
+        -0.021452366926510036
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.2472,
+      "frac_changed": 0.5846
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/m4_four21_noMBR__overall.json": {
+      "corpus_cider": 1.1896298857005396,
+      "mean_diff": -0.03328769025533988,
+      "ci95": [
+        -0.04368487026704039,
+        -0.023093822977836343
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.202,
+      "frac_changed": 0.492
+    }
+  }
+}

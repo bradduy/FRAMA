@@ -1,0 +1,57 @@
+{
+ "lm_top1__overall.json": {
+  "n": 5000,
+  "CLIP-S": 79.03,
+  "RefCLIP-S": 83.26
+ },
+ "blip_top1__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.73,
+  "RefCLIP-S": 84.5
+ },
+ "borda3_lm_bigG_blip__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.54,
+  "RefCLIP-S": 84.43
+ },
+ "zsum3_lm_bigG_blip__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.6,
+  "RefCLIP-S": 84.48
+ },
+ "stack4_zsum3_vqa__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.53,
+  "RefCLIP-S": 84.53
+ },
+ "stack4_zsum3_mbr__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.24,
+  "RefCLIP-S": 84.27
+ },
+ "zsum3_plus_ground_best__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.52,
+  "RefCLIP-S": 84.49
+ },
+ "stack6_all_equal__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.19,
+  "RefCLIP-S": 84.38
+ },
+ "stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.44,
+  "RefCLIP-S": 84.54
+ },
+ "oracle20_approx__overall.json": {
+  "n": 5000,
+  "CLIP-S": 79.32,
+  "RefCLIP-S": 84.34
+ },
+ "blip2cap__overall.json": {
+  "n": 5000,
+  "CLIP-S": 75.75,
+  "RefCLIP-S": 81.7
+ }
+}

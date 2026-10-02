@@ -1,0 +1,95 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_ifcapsub/stack6_all_equal__overall.json",
+  "base_corpus_cider": 1.2787562788164948,
+  "n_images": 1000,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_qwen2vl2b_stack6swap__overall.json": {
+      "corpus_cider": 1.2748545857354001,
+      "mean_diff": -0.0039016930810945234,
+      "ci95": [
+        -0.020519663559608367,
+        0.012527827837273115
+      ],
+      "p_one_sided": 0.6814,
+      "frac_images_improved": 0.143,
+      "frac_changed": 0.296
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_qwen2vl2b_zsum3plus__overall.json": {
+      "corpus_cider": 1.2572756417357933,
+      "mean_diff": -0.02148063708070165,
+      "ci95": [
+        -0.04093117617641752,
+        -0.0019894559744702894
+      ],
+      "p_one_sided": 0.9838,
+      "frac_images_improved": 0.207,
+      "frac_changed": 0.489
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_smolvlm256m_stack6swap__overall.json": {
+      "corpus_cider": 1.2687510201743866,
+      "mean_diff": -0.010005258642108113,
+      "ci95": [
+        -0.025852207328365618,
+        0.006056981812032545
+      ],
+      "p_one_sided": 0.8865,
+      "frac_images_improved": 0.138,
+      "frac_changed": 0.305
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_smolvlm256m_zsum3plus__overall.json": {
+      "corpus_cider": 1.2533860132207302,
+      "mean_diff": -0.02537026559576494,
+      "ci95": [
+        -0.04613447435146231,
+        -0.004999254517791745
+      ],
+      "p_one_sided": 0.9924,
+      "frac_images_improved": 0.201,
+      "frac_changed": 0.491
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_smolvlm500m_stack6swap__overall.json": {
+      "corpus_cider": 1.266613073182792,
+      "mean_diff": -0.012143205633702792,
+      "ci95": [
+        -0.026850171381920085,
+        0.0020897601186936126
+      ],
+      "p_one_sided": 0.9544,
+      "frac_images_improved": 0.14,
+      "frac_changed": 0.307
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/sj_smolvlm500m_zsum3plus__overall.json": {
+      "corpus_cider": 1.253931837967338,
+      "mean_diff": -0.02482444084915674,
+      "ci95": [
+        -0.04474332521939575,
+        -0.00489578257143019
+      ],
+      "p_one_sided": 0.9932,
+      "frac_images_improved": 0.202,
+      "frac_changed": 0.487
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_ifcapsub/zsum3_lm_bigG_blip__overall.json": {
+      "corpus_cider": 1.2464560167946392,
+      "mean_diff": -0.03230026202185555,
+      "ci95": [
+        -0.05237886974878197,
+        -0.01174752164001954
+      ],
+      "p_one_sided": 0.9991,
+      "frac_images_improved": 0.17,
+      "frac_changed": 0.448
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco_ifcapsub/stack4_zsum3_vqa__overall.json": {
+      "corpus_cider": 1.2540140658375272,
+      "mean_diff": -0.02474221297896782,
+      "ci95": [
+        -0.04354185081548697,
+        -0.005681284123260591
+      ],
+      "p_one_sided": 0.9947,
+      "frac_images_improved": 0.16,
+      "frac_changed": 0.397
+    }
+  }
+}

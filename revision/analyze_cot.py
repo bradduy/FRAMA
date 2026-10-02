@@ -40,5 +40,6 @@ rules = {"zsum3": z(LM) + z(BG) + z(BL), "six_blip2": z(LM) + z(BG) + z(BL) + z(
 for r, sc in rules.items():
     pick = sc.argmax(1)
     recs = [{"image_name": beams[i]["image_name"], "captions": beams[i]["captions"], "prediction": beams[i]["beam"][int(pick[k])]["caption"]} for k, i in enumerate(I)]
+    os.makedirs(os.path.join(HERE, "preds", "coco"), exist_ok=True)
     json.dump(recs, open(os.path.join(HERE, "preds", "coco", f"cot500_{r}__overall.json"), "w"))
 print("wrote", len(rules), "prediction files")

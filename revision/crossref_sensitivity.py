@@ -6,7 +6,7 @@ a conservative estimate of what reference-like selection information buys; the p
 Oracle@N corresponds to k = 5 including the held-out reference."""
 import argparse, json, os, sys
 import numpy as np
-sys.path.insert(0, os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.insert(0, os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "third_party", "evaluation")))
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from pycocoevalcap.cider.cider import Cider
 ap = argparse.ArgumentParser(); ap.add_argument("--beam_dump", required=True); ap.add_argument("--out", required=True)

@@ -1,0 +1,69 @@
+{
+ "bench": "nocaps",
+ "n_images": 4500,
+ "K": 20,
+ "folds": [
+  {
+   "heldout": 0,
+   "crossref_oracle": 88.28025189277206,
+   "oracle20_fiveref_pick": 106.76458797669785,
+   "lm_top1": 67.98724618435689,
+   "zsum3_lm_bigG_blip": 77.80902891639327,
+   "stack6_all_equal": 78.90866512987313,
+   "stack5_noLM_blip_bigG_vqa_mbr_ground": 79.26181557108364,
+   "oracle20_approx": 101.67119154658705
+  },
+  {
+   "heldout": 1,
+   "crossref_oracle": 88.82644518086056,
+   "oracle20_fiveref_pick": 107.83227670117614,
+   "lm_top1": 67.16729012567359,
+   "zsum3_lm_bigG_blip": 76.97617759212014,
+   "stack6_all_equal": 78.67448775235033,
+   "stack5_noLM_blip_bigG_vqa_mbr_ground": 79.4046127301215,
+   "oracle20_approx": 103.17830793914978
+  },
+  {
+   "heldout": 2,
+   "crossref_oracle": 89.16363628827344,
+   "oracle20_fiveref_pick": 109.51933162369633,
+   "lm_top1": 68.66456551997202,
+   "zsum3_lm_bigG_blip": 77.31062245874092,
+   "stack6_all_equal": 78.12298310711469,
+   "stack5_noLM_blip_bigG_vqa_mbr_ground": 79.55509175319965,
+   "oracle20_approx": 104.29844357089007
+  },
+  {
+   "heldout": 3,
+   "crossref_oracle": 88.14496018391343,
+   "oracle20_fiveref_pick": 107.81514688066262,
+   "lm_top1": 67.6221086767435,
+   "zsum3_lm_bigG_blip": 77.24764307763151,
+   "stack6_all_equal": 78.73889105573066,
+   "stack5_noLM_blip_bigG_vqa_mbr_ground": 78.89708550868679,
+   "oracle20_approx": 103.18335477108495
+  },
+  {
+   "heldout": 4,
+   "crossref_oracle": 89.07607592017531,
+   "oracle20_fiveref_pick": 109.11271848229029,
+   "lm_top1": 69.00339438933909,
+   "zsum3_lm_bigG_blip": 77.83866364194098,
+   "stack6_all_equal": 79.39828496207346,
+   "stack5_noLM_blip_bigG_vqa_mbr_ground": 80.87396139848681,
+   "oracle20_approx": 102.92276126016793
+  }
+ ],
+ "oracle20_fiveref_official": 106.41925169681821,
+ "mean_over_folds": {
+  "lm_top1": 68.08892097921702,
+  "zsum3_lm_bigG_blip": 77.43642713736536,
+  "stack6_all_equal": 78.76866240142844,
+  "stack5_noLM_blip_bigG_vqa_mbr_ground": 79.59851339231568,
+  "oracle20_approx": 103.05081181757596,
+  "crossref_oracle": 88.69827389319896,
+  "oracle20_fiveref_pick": 108.20881233290466
+ },
+ "attainable_gain_over_lm": 20.609352913981937,
+ "fiveref_pick_gain_over_lm_singleref": 40.119891353687635
+}

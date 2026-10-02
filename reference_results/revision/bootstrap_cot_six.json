@@ -1,0 +1,29 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_six_s1__overall.json",
+  "base_corpus_cider": 1.3133364403174175,
+  "n_images": 500,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_six_s2__overall.json": {
+      "corpus_cider": 1.2862671891365316,
+      "mean_diff": -0.027069251180886014,
+      "ci95": [
+        -0.04820419587040735,
+        -0.006878410006354367
+      ],
+      "p_one_sided": 0.9954,
+      "frac_images_improved": 0.122,
+      "frac_changed": 0.306
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_six_blip2__overall.json": {
+      "corpus_cider": 1.3151741208111658,
+      "mean_diff": 0.0018376804937480804,
+      "ci95": [
+        -0.023385189915714345,
+        0.027683642264989525
+      ],
+      "p_one_sided": 0.4429,
+      "frac_images_improved": 0.154,
+      "frac_changed": 0.284
+    }
+  }
+}

@@ -1,0 +1,49 @@
+PTBTokenizer tokenized 30934 tokens at 202609.20 tokens per second.
+PTBTokenizer tokenized 5860 tokens at 57642.86 tokens per second.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.nustaq.serialization.FSTClazzInfo (file:/home/duy_tran10_onemount_com/ZeroShotImageCap/IFCap/evaluation/pycocoevalcap/spice/lib/fst-2.47.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.nustaq.serialization.FSTClazzInfo
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Parsing reference captions
+Parsing test captions
+Initiating Stanford parsing pipeline
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... 
+done [0.5 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [1.2 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [0.6 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [0.7 sec].
+Threads( StanfordCoreNLP ) [0.799 seconds]
+Warning: Nashorn engine is planned to be removed from a future JDK release
+SPICE evaluation took: 6.980 s
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 4854, 'reflen': 4800, 'guess': [4854, 4354, 3854, 3354], 'correct': [3730, 2070, 1040, 517]}
+ratio: 1.0112499999997893
+Bleu_1: 0.768
+Bleu_2: 0.604
+Bleu_3: 0.462
+Bleu_4: 0.351
+computing METEOR score...
+METEOR: 0.280
+computing Rouge score...
+ROUGE_L: 0.562
+computing CIDEr score...
+CIDEr: 1.286
+computing SPICE score...
+SPICE: 0.223
+Bleu_1: 0.768
+Bleu_2: 0.604
+Bleu_3: 0.462
+Bleu_4: 0.351
+METEOR: 0.280
+ROUGE_L: 0.562
+CIDEr: 1.286
+SPICE: 0.223

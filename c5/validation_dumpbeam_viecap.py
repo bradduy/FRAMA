@@ -17,7 +17,7 @@ from tqdm import tqdm
 from transformers import GPT2Tokenizer
 
 # the script lives outside the ViECap repo: import its modules from the cwd or the default clone path
-for _p in (os.getcwd(), os.path.expanduser("~/ZeroShotImageCap/ViECap")):
+for _p in (os.getcwd(), os.environ.get("VIECAP_ROOT", os.path.expanduser("~/ZeroShotImageCap/ViECap"))):
     if os.path.exists(os.path.join(_p, "ClipCap.py")) and _p not in sys.path:
         sys.path.insert(0, _p)
 from ClipCap import ClipCaptionModel

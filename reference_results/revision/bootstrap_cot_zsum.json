@@ -1,0 +1,29 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_zsum3__overall.json",
+  "base_corpus_cider": 1.2922825494493522,
+  "n_images": 500,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_zsum3_s1__overall.json": {
+      "corpus_cider": 1.3082757807964125,
+      "mean_diff": 0.015993231347060294,
+      "ci95": [
+        -0.0051058496843457025,
+        0.03736264660079773
+      ],
+      "p_one_sided": 0.0692,
+      "frac_images_improved": 0.134,
+      "frac_changed": 0.236
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/coco/cot500_zsum3_s2__overall.json": {
+      "corpus_cider": 1.288540887391663,
+      "mean_diff": -0.003741662057689121,
+      "ci95": [
+        -0.024980798048538515,
+        0.016492422795739013
+      ],
+      "p_one_sided": 0.6312,
+      "frac_images_improved": 0.12,
+      "frac_changed": 0.248
+    }
+  }
+}

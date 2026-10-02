@@ -1,3 +1,20 @@
 __pycache__/
 *.pyc
 .DS_Store
+*.log
+
+# outputs of reproduce.sh and evaluate_official.sh
+/preds/
+/results/
+/reliability6_summary.json
+/weight_sweep_summary.json
+/revision/cot_summary.json
+/revision/m4_*_summary.json
+mbr_self_*.npy
+/vqascore_viecap*.jsonl
+/ground_viecap*.jsonl
+/data/inference_result/c4_expand/coco_beam40_dump.json
+/data/inference_result/c4_expand/coco_beam80_dump.json
+
+# IFCap evaluation toolkit, fetched by setup_eval.sh
+/third_party/

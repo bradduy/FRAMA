@@ -4,7 +4,7 @@ RefPACScore functions (w = 2.0). Run from inside a clone of aimagelab/pacscore."
 import argparse, json, os, sys
 import numpy as np, torch
 sys.path.insert(0, os.getcwd())
-sys.path.append(os.path.expanduser("~/ZeroShotImageCap/IFCap/evaluation"))
+sys.path.append(os.environ.get("COCOEVAL_DIR", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "third_party", "evaluation")))
 from models.clip_lora import clip_lora
 from evaluation import PACScore, RefPACScore
 ap = argparse.ArgumentParser(); ap.add_argument("--image_dir", required=True); ap.add_argument("--preds", nargs="+", required=True)

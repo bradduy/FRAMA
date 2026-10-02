@@ -1,0 +1,155 @@
+{
+  "annotations": {
+    "aggregate_sha256": "ac0b93d0598bdb758cb8802f2c3d2e759bc0dbd544ad73d844c968dcf4a7115f",
+    "files": {
+      "captions_train2014.json": "dd8c9636dc11740f956e36728866ea0c4ebe4988dcbdc5e712b7c2267f152d12",
+      "captions_val2014.json": "7da4cc45cb76ee1642d163e846e1e0a33feffac2e841c9c426d585ea499165a4",
+      "instances_train2014.json": "777ef504abfeba349930485bb32ecd5b6529129a3e010f7852e1437cb049b732",
+      "instances_val2014.json": "e1b4d1bc54906827b1a029981b1c77f2088bd4462569b7615db7929070c3ab47"
+    },
+    "name": "MS COCO 2014 train+val captions and instances"
+  },
+  "canonical_eligible": true,
+  "dataset": {
+    "expected_count": 5000,
+    "name": "COCO",
+    "role": "test",
+    "split": "Karpathy test"
+  },
+  "mapping": {
+    "image_count": 5000,
+    "images_with_no_recognized_ground_truth_objects": 34,
+    "mapping_sha256": "01c8db381a31930e940d27da2cc40a8f70a56ce2b54942c6421ca67b30f2f6de",
+    "target_ground_truth_captions": 25010,
+    "target_instance_annotations": 35837
+  },
+  "methods": {
+    "matcher": {
+      "CHAIR_i": 0.02544083995154126,
+      "CHAIR_s": 0.0372,
+      "counts": {
+        "hallucinated_object_mentions": 189,
+        "hallucinated_sentences": 186,
+        "object_mentions": 7429,
+        "sentences": 5000
+      },
+      "id_reference_sha256": "a0056e4f54153fdaf9c98b312ef57e45ed7046fec20f6dc04b27f2364c91da35",
+      "prediction_semantic_sha256": "bb2ddf130385dc58f6fa2a8ca86d5df20d37417bf5faff3e8ffee2792a5700ac",
+      "prediction_sha256": "d465d166b7e85d819d0d5cc5e053e344f6b01566ffa9c059a23491757913eaf5",
+      "row_count": 5000
+    },
+    "pcvr": {
+      "CHAIR_i": 0.04567851911040085,
+      "CHAIR_s": 0.0666,
+      "counts": {
+        "hallucinated_object_mentions": 343,
+        "hallucinated_sentences": 333,
+        "object_mentions": 7509,
+        "sentences": 5000
+      },
+      "id_reference_sha256": "a0056e4f54153fdaf9c98b312ef57e45ed7046fec20f6dc04b27f2364c91da35",
+      "prediction_semantic_sha256": "a50a1ff0c9f5887a3c166294642646179228b1b01312cf5567ee4c635256f27f",
+      "prediction_sha256": "c180e7941141a8996df638f16ba725c2b054e79578c6f563eb7775786208026a",
+      "row_count": 5000
+    }
+  },
+  "metric_implementation": {
+    "commit": "6e4d33c4bedf6dfcd24c61bf527f40714717be47",
+    "manifest_sha256": "12c99cf4b4b189e965e5a7b63f02740b858c5fcde4a54012568e2a1665198e0e",
+    "name": "LisaAnne/Hallucination official CHAIR @ 6e4d33c4bedf6dfcd24c61bf527f40714717be47",
+    "python3_adapter": {
+      "nltk_sdist_sha256": "2661f9971d983db314bbebd51ba770811a362c6597fd0f303bb1d3beadcb4834",
+      "nltk_version": "3.2.5",
+      "pattern_commit": "5b85d998c30ddc6772b56310713530224466083a",
+      "pattern_repository_url": "https://github.com/clips/pattern.git",
+      "policy": "Port only Python syntax/input plumbing; execute frozen Pattern singularizer rules and use frozen NLTK/Punkt tokenizer.",
+      "punkt_english_pickle_sha256": "5cad3758596392364e3be9803dbd7ebeda384b68937b488a01365f5551bb942c",
+      "runtime_integrity": {
+        "artifacts": {
+          "nltk_distribution_metadata": {
+            "byte_count": 39993,
+            "file_count": 7,
+            "relative_path": "nltk-3.2.5-py3.9.egg-info",
+            "sha256": "bf1db014435a7fcda89c3856ebdad9e225fa67f336879b32a75f389c609d4cfe"
+          },
+          "nltk_package_tree": {
+            "byte_count": 5158793,
+            "file_count": 373,
+            "relative_path": "nltk",
+            "sha256": "5b8e6ea747ab9034d5d8113c7d0624f65b5a9cd374bc027d4c53e2286314b110"
+          },
+          "six_distribution_metadata": {
+            "byte_count": 3486,
+            "file_count": 7,
+            "relative_path": "six-1.17.0.dist-info",
+            "sha256": "200ac30e3c1089e3ed83a62fb67f6eb0c115352922fbd7bec3450918b13acb63"
+          },
+          "six_module": {
+            "byte_count": 34703,
+            "file_count": 1,
+            "relative_path": "six.py",
+            "sha256": "c51c91f703d3d4b3696c923cb5fec213e05e75d9215393befac7f2fa6a3904df"
+          }
+        },
+        "excluded_generated_files": [
+          "__pycache__/**",
+          "*.pyc",
+          "*.pyo"
+        ],
+        "python_minor": "3.9",
+        "schema_version": "pcvr.chair-python-runtime-integrity.v1",
+        "six_version": "1.17.0",
+        "tree_hash_algorithm": "sha256-lines-v1"
+      }
+    },
+    "repository_url": "https://github.com/LisaAnne/Hallucination.git",
+    "source_components": {
+      "local_adapter/chair/algorithm.py": "74f9c95b3d0d1703664d3cdd6cee6195e33d0249798b96fb197915613402e8d2",
+      "local_adapter/chair/bootstrap.py": "fc28f062597ddc4145a5c39bd3da9a0e88558ddbbdb59c37347d3364e54b628b",
+      "local_adapter/chair/cli.py": "f94bc3fc4d9fb8c1f977f21d7de792db237cf26f0a0043309ea1c95e3a2f0d6d",
+      "local_adapter/chair/common.py": "7f6d1a46abf486deb9aa4f34d831e72b60b1751e931807ace5e24c14be803be7",
+      "local_adapter/chair/pattern36.py": "db0e3b36f3fb68889a992b845a8f786d83ec84cccbf24c07ee8c056c7e512eaf",
+      "local_adapter/chair/requirements.nltk325.txt": "073224579dcdd4dd401cf22775b290c7768e08ecaa98aeb57ca4ac410268237a",
+      "local_adapter/chair/sources.py": "ea2d55ab4f1a1760f77f8cc61b9da755eb15f13c9e8a75fa4ed5735028d060fe",
+      "nltk325/distribution_metadata": "bf1db014435a7fcda89c3856ebdad9e225fa67f336879b32a75f389c609d4cfe",
+      "nltk325/package/__init__.py": "f5d250e565b09712d6f80d47e19e24fcb2d01d9c52a8032058a3140d900a1934",
+      "nltk325/package/data.py": "2466c398cc1ff0d085ecd6b696bc6a0f3276d1dee8d30da8b413de7c051fdc41",
+      "nltk325/package/decorators.py": "2728f1c086c581f539d58259e155d019bfa222207c3575236f04a19c11ff5f04",
+      "nltk325/package/tokenize/__init__.py": "3a3ef149ecf23fcbecebac092997e67e0154b4c2a706f3353da7638c7dffde1a",
+      "nltk325/package/tokenize/api.py": "db2cbbe464912e123f14416cbe640b374d442f8d78dbfa1a2df545b184eaa335",
+      "nltk325/package/tokenize/punkt.py": "38476c043323fd87feaa0040332b29ede7fecad6cb4938630630480ec481ba20",
+      "nltk325/package/tokenize/treebank.py": "18f4d871568db6cf9b047705bd1a58ad2dce3256dea8d9540b58c3dcc6909e24",
+      "nltk325/package/tokenize/util.py": "15888aa6a6b8d58311c184949c9aa8613f9afb896c59ee97d5c49fbb8ade551f",
+      "nltk325/package_tree": "5b8e6ea747ab9034d5d8113c7d0624f65b5a9cd374bc027d4c53e2286314b110",
+      "nltk325/punkt_archive": "161eacd1c401d3449515712e0d601ceacaceea5ea9bd8827b9a41ef072feb6c9",
+      "nltk325/punkt_english_pickle": "5cad3758596392364e3be9803dbd7ebeda384b68937b488a01365f5551bb942c",
+      "nltk325/sdist": "2661f9971d983db314bbebd51ba770811a362c6597fd0f303bb1d3beadcb4834",
+      "official_chair/@commit": "b382c70b0742019f338757212f550d6a40809b5739a0075c888c17e479d1ae9f",
+      "official_chair/README.md": "083a31e791f5e0e8b1a05ecbe7fa3e7aa1c40410a6582da19f89905dc774dd13",
+      "official_chair/data/synonyms.txt": "b685537b36fe21b791c87151b96a991ceb582edff19f3da204dcc7a7905502f2",
+      "official_chair/requirements.txt": "c94700723863f56706c464b44e8e0e9de310dcb44a5a980000d78cabed4bd4ce",
+      "official_chair/utils/chair.py": "b05f701ce6ec0125dd700ffb80ed58bfcf2686df8c9bd62f70169cb928de4627",
+      "pattern36/@commit": "20579bb89eeb4508823a6aefb19d83b073c2eac408505eeed69d1ba1925939da",
+      "pattern36/LICENSE.txt": "fbf6b9b5544c750232bfe690a8a83f8ddf870848a3e52aa43b32e67180e1e0dc",
+      "pattern36/pattern/__init__.py": "b7a61a33f2989811ecf425949e415b471a40c15b6400fe1cec1151419fd8fae0",
+      "pattern36/pattern/text/en/inflect.py": "5c140129923617229220803d95a812db3734e99315fb9fc7d39136918ef2bb29",
+      "six/distribution_metadata": "200ac30e3c1089e3ed83a62fb67f6eb0c115352922fbd7bec3450918b13acb63",
+      "six/module": "c51c91f703d3d4b3696c923cb5fec213e05e75d9215393befac7f2fa6a3904df"
+    },
+    "source_sha256": "5b405743af7deada66ebb936a76fae10c3c59bc13138edc89d128034be1d0fe0"
+  },
+  "pair_integrity": {
+    "canonical_mapping_sha256": "01c8db381a31930e940d27da2cc40a8f70a56ce2b54942c6421ca67b30f2f6de",
+    "id_reference_sha256": "a0056e4f54153fdaf9c98b312ef57e45ed7046fec20f6dc04b27f2364c91da35",
+    "same_image_ids": true,
+    "same_references": true
+  },
+  "runtime": {
+    "nltk_version": "3.2.5",
+    "python_implementation": "CPython",
+    "python_version": "3.9.25"
+  },
+  "schema_version": "pcvr.chair-report.v1",
+  "status": "complete",
+  "units": "fraction"
+}

@@ -54,5 +54,6 @@ for rule, sc in [("five21", five21), ("five20", five20)] + [(k, v) for k, v in s
     pk = sc.argmax(1)
     for sp, ids in splits.items():
         recs = [{"image_name": names[i], "captions": beams[i]["captions"], "prediction": cands21[i][int(pk[i])]} for i in ids]
+        os.makedirs(os.path.join(HERE, "preds", bench), exist_ok=True)
         json.dump(recs, open(os.path.join(HERE, "preds", bench, f"m4_{rule}__{sp}.json"), "w"))
 print("wrote predictions for", list(splits))

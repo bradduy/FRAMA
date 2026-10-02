@@ -184,6 +184,7 @@ if __name__ == "__main__":
         tag = "zsum3_plus_ground_best"
         for sp in (["overall"] if bench == "coco" else ["overall", "out_domain"]):
             sel = recs if sp == "overall" else [r for r, b in zip(recs, beams) if b.get("split") == sp]
+            os.makedirs(os.path.join(HERE, "preds", bench), exist_ok=True)
             json.dump(sel, open(os.path.join(HERE, "preds", bench, f"{tag}__{sp}.json"), "w"))
         print(f"wrote preds/{bench}/{tag}__*.json  ({best[0]})")
         # Paired subset files for the VQA block: same images for baseline and combos,
@@ -210,5 +211,6 @@ if __name__ == "__main__":
                        "prediction": cands[i][int(pick[i])]} for i, b in enumerate(beams) if has_v[i]]
                 for sp in (["overall"] if bench == "coco" else ["overall", "out_domain"]):
                     sel = r2 if sp == "overall" else [r for r in r2 if next(b for b in beams if b["image_name"] == r["image_name"]).get("split") == sp]
+                    os.makedirs(os.path.join(HERE, "preds", bench), exist_ok=True)
                     json.dump(sel, open(os.path.join(HERE, "preds", bench, f"{cname}__{sp}.json"), "w"))
             print(f"wrote paired VQA-subset preds for {bench}: {len(combos)} rules x splits, n={int(has_v.sum())} images")

@@ -1,0 +1,62 @@
+{
+  "base": "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/blip_top1__overall.json",
+  "base_corpus_cider": 0.8028923648483764,
+  "n_images": 4500,
+  "cands": {
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/zsum3_lm_bigG_blip__overall.json": {
+      "corpus_cider": 0.7992286429215921,
+      "mean_diff": -0.003663721926784307,
+      "ci95": [
+        -0.011371608753056756,
+        0.003930717831193726
+      ],
+      "p_one_sided": 0.8238,
+      "frac_images_improved": 0.3615555555555556,
+      "frac_changed": 0.7024444444444444
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/stack6_all_equal__overall.json": {
+      "corpus_cider": 0.8128230527255711,
+      "mean_diff": 0.009930687877194602,
+      "ci95": [
+        0.0018242615831661419,
+        0.018117907571028644
+      ],
+      "p_one_sided": 0.0084,
+      "frac_images_improved": 0.41555555555555557,
+      "frac_changed": 0.7706666666666667
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+      "corpus_cider": 0.822690489058298,
+      "mean_diff": 0.019798124209921587,
+      "ci95": [
+        0.012367188991165701,
+        0.02722777298462835
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.3877777777777778,
+      "frac_changed": 0.6871111111111111
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/stack4_noLM_blip_bigG_vqa_mbr__overall.json": {
+      "corpus_cider": 0.8187498260887252,
+      "mean_diff": 0.015857461240348713,
+      "ci95": [
+        0.008290373411513563,
+        0.02357470334713199
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.37866666666666665,
+      "frac_changed": 0.6744444444444444
+    },
+    "/home/duy_tran10_onemount_com/ZeroShotImageCap/macst_v1/v2_upgrade/preds/nocaps/lm_top1__overall.json": {
+      "corpus_cider": 0.7032817907350525,
+      "mean_diff": -0.099610574113324,
+      "ci95": [
+        -0.1099509732904532,
+        -0.08944214726314156
+      ],
+      "p_one_sided": 1.0,
+      "frac_images_improved": 0.37866666666666665,
+      "frac_changed": 0.9622222222222222
+    }
+  }
+}

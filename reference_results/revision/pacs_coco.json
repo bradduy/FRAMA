@@ -1,0 +1,47 @@
+{
+ "lm_top1__overall.json": {
+  "n": 5000,
+  "PAC-S++": 45.14,
+  "RefPAC-S++": 59.66
+ },
+ "blip_top1__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.91,
+  "RefPAC-S++": 61.38
+ },
+ "borda3_lm_bigG_blip__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.67,
+  "RefPAC-S++": 61.19
+ },
+ "zsum3_lm_bigG_blip__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.76,
+  "RefPAC-S++": 61.28
+ },
+ "stack4_zsum3_vqa__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.73,
+  "RefPAC-S++": 61.31
+ },
+ "stack6_all_equal__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.48,
+  "RefPAC-S++": 61.12
+ },
+ "stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.72,
+  "RefPAC-S++": 61.34
+ },
+ "oracle20_approx__overall.json": {
+  "n": 5000,
+  "PAC-S++": 45.82,
+  "RefPAC-S++": 60.77
+ },
+ "blip2cap__overall.json": {
+  "n": 5000,
+  "PAC-S++": 44.79,
+  "RefPAC-S++": 59.47
+ }
+}

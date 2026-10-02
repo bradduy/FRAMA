@@ -1,0 +1,49 @@
+PTBTokenizer tokenized 179060 tokens at 508880.39 tokens per second.
+PTBTokenizer tokenized 16504 tokens at 103879.70 tokens per second.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.nustaq.serialization.FSTClazzInfo (file:/home/duy_tran10_onemount_com/ZeroShotImageCap/IFCap/evaluation/pycocoevalcap/spice/lib/fst-2.47.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.nustaq.serialization.FSTClazzInfo
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Parsing reference captions
+Parsing test captions
+Initiating Stanford parsing pipeline
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... 
+done [0.4 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [1.2 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [0.7 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [0.7 sec].
+Threads( StanfordCoreNLP ) [1.962 seconds]
+Warning: Nashorn engine is planned to be removed from a future JDK release
+SPICE evaluation took: 12.05 s
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 13669, 'reflen': 13547, 'guess': [13669, 12256, 10843, 9430], 'correct': [9897, 4694, 1855, 646]}
+ratio: 1.0090056839151835
+Bleu_1: 0.724
+Bleu_2: 0.527
+Bleu_3: 0.362
+Bleu_4: 0.239
+computing METEOR score...
+METEOR: 0.218
+computing Rouge score...
+ROUGE_L: 0.481
+computing CIDEr score...
+CIDEr: 0.793
+computing SPICE score...
+SPICE: 0.101
+Bleu_1: 0.724
+Bleu_2: 0.527
+Bleu_3: 0.362
+Bleu_4: 0.239
+METEOR: 0.218
+ROUGE_L: 0.481
+CIDEr: 0.793
+SPICE: 0.101

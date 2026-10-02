@@ -26,4 +26,5 @@ for name, sc in rules.items():
     pick = sc.argmax(1)
     print(f"{name:40s} approx CIDEr {100*M[np.arange(N), pick].mean():.1f}")
     recs = [{"image_name": b["image_name"], "captions": b["captions"], "prediction": b["beam"][int(pick[i])]["caption"]} for i, b in enumerate(beams)]
+    os.makedirs(os.path.join(HERE, "preds", "coco"), exist_ok=True)
     json.dump(recs, open(os.path.join(HERE, "preds", "coco", f"itmflickr_{name}__overall.json"), "w"))
