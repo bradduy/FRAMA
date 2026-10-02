@@ -10,6 +10,20 @@ System One verifier; MBR, a beam-internal consensus; and ground, the mean OWLv2 
 the caption's nouns. Each score is z-normalised within the beam and the six are summed with
 equal weights. Nothing is trained or tuned on any evaluation image.
 
+## Caption your own images
+
+`inference/frama_infer.py` runs the whole pipeline on any image: retrieval, the frozen IFCap
+decoder, the six agents and the equal-weight selection. Its assets and model card are on the
+Hugging Face Hub at [bradduy/FRAMA](https://huggingface.co/bradduy/FRAMA):
+
+```bash
+hf download bradduy/FRAMA --local-dir FRAMA && cd FRAMA
+pip install -r requirements.txt
+python frama_infer.py --images photo.jpg --out captions.json
+```
+
+See `inference/README.md` for its verification against the paper's artifacts.
+
 ## What can be reproduced, and how
 
 | Level | Needs | Command |
@@ -113,6 +127,7 @@ from the same candidates we scored.
 | `revision/` | control studies: BLIP-2 captions in `blip2cap/`, the BLIP-2 caption as a 21st candidate in `m4_*`, the System Two judge in `cot_shard*`, the Flickr-tuned BLIP-ITM checkpoint in `itm_flickr_coco.jsonl` |
 | `reference_results/` | our official metrics, CHAIR, bootstrap and cross-reference outputs |
 | `pilot_*.py`, `analyze_*.py`, `make_*_preds.py` | selection rules and analyses, all CPU |
+| `inference/` | single-image inference, mirrored from the Hugging Face repository, with its verification reports |
 
 Environment variables: `IFCAP_ROOT` is the folder holding `inference_result/`, `data/` by default in
 `reproduce.sh`; `COCOEVAL_DIR` is the IFCap evaluation toolkit, `third_party/evaluation` by default;

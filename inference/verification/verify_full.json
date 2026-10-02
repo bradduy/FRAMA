@@ -1,0 +1,274 @@
+{
+ "n": 96,
+ "retrieval": "93/96",
+ "kept": "96/96",
+ "entities": "96/96",
+ "beam_text": "79/96",
+ "pick_six": "79/96",
+ "pick_five": "79/96",
+ "max_abs_diff_on_identical_beams": {
+  "LM": 0.001095592975616455,
+  "bigG": 1.996755599975586e-06,
+  "BLIP": 4.708766937255859e-06,
+  "VQA": 0.0,
+  "MBR": 0.0,
+  "ground": 0.0
+ },
+ "beam_mismatches": [
+  {
+   "image": "COCO_val2014_000000192440.jpg",
+   "ours_top3": [
+    "A small bathroom with a toilet and a sink.",
+    "A small bathroom with a sink and a toilet.",
+    "A small bathroom with a sink, toilet, and bathtub."
+   ],
+   "paper_top3": [
+    "A small bathroom with a toilet and a sink.",
+    "A small bathroom with a sink and a toilet.",
+    "A small bathroom with a sink, toilet, and bathtub."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000001146.jpg",
+   "ours_top3": [
+    "A close up of a person wearing a tie.",
+    "A close up of a man wearing a tie.",
+    "A close up of a man wearing a tie and glasses."
+   ],
+   "paper_top3": [
+    "A close up of a person wearing a tie.",
+    "A close up of a man wearing a tie.",
+    "A close up of a man wearing a tie and glasses."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000560623.jpg",
+   "ours_top3": [
+    "Two planes are parked at an airport terminal.",
+    "Several planes are parked at an airport terminal.",
+    "Several planes lined up at an airport terminal."
+   ],
+   "paper_top3": [
+    "Two planes are parked at an airport terminal.",
+    "Several planes are parked at an airport terminal.",
+    "Several planes lined up at an airport terminal."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000368117.jpg",
+   "ours_top3": [
+    "A traffic light is lit up against a blue sky.",
+    "A traffic light with a blue sky in the background.",
+    "A red traffic light with a blue sky in the background."
+   ],
+   "paper_top3": [
+    "A traffic light is lit up against a blue sky.",
+    "A traffic light with a blue sky in the background.",
+    "A traffic light is lit up against a gray sky."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000017756.jpg",
+   "ours_top3": [
+    "Two boats are docked next to each other in the water.",
+    "Two boats are docked next to each other.",
+    "A red and white boat is in the water."
+   ],
+   "paper_top3": [
+    "A red and white boat is in the water.",
+    "A red and white boat is docked in the water.",
+    "A red and white boat is tied to a dock."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000305821.jpg",
+   "ours_top3": [
+    "A giraffe is eating leaves from a tree.",
+    "Two giraffes are eating leaves from a tree.",
+    "The giraffes are eating leaves from the tree."
+   ],
+   "paper_top3": [
+    "A giraffe is eating leaves from a tree.",
+    "Two giraffes are eating leaves from a tree.",
+    "The giraffes are eating leaves from the tree."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000074711.jpg",
+   "ours_top3": [
+    "A couple of ducks swimming in a body of water.",
+    "Two ducks swimming in a body of water.",
+    "Two seagulls are swimming in a body of water."
+   ],
+   "paper_top3": [
+    "A couple of ducks swimming in a body of water.",
+    "Two ducks swimming in a body of water.",
+    "Two seagulls are swimming in a body of water."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000197461.jpg",
+   "ours_top3": [
+    "A sheep that is standing in the grass.",
+    "A sheep that is walking in the grass.",
+    "A sheep that is standing in some grass."
+   ],
+   "paper_top3": [
+    "A sheep that is standing in the grass.",
+    "A sheep that is walking in the grass.",
+    "A sheep that is standing in some grass."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000535292.jpg",
+   "ours_top3": [
+    "A black and white cow is standing in a field.",
+    "A black and white cow is standing in the grass.",
+    "A black and white cow is standing in a grassy field."
+   ],
+   "paper_top3": [
+    "A black and white cow is standing in a field.",
+    "A black and white cow is standing in the grass.",
+    "A black and white cow is standing in a grassy field."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000085329.jpg",
+   "ours_top3": [
+    "A close up of a woman with dark hair.",
+    "A close up of a girl with dark hair.",
+    "A close up of a black and white cat."
+   ],
+   "paper_top3": [
+    "A close up of a woman with dark hair.",
+    "A close up of a girl with dark hair.",
+    "A close up of a black and white cat."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000329717.jpg",
+   "ours_top3": [
+    "A little boy sitting in front of a suitcase.",
+    "A baby sitting in front of a suitcase.",
+    "A little boy sitting in a small suitcase."
+   ],
+   "paper_top3": [
+    "A little boy sitting in front of a suitcase.",
+    "A baby sitting in front of a suitcase.",
+    "A little boy sitting in a small suitcase."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000341393.jpg",
+   "ours_top3": [
+    "A brown dog laying on top of a pool of water.",
+    "A large brown dog laying on top of a pool.",
+    "A large brown dog laying on top of a pool of water."
+   ],
+   "paper_top3": [
+    "A brown dog laying on top of a pool of water.",
+    "A large brown dog laying on top of a pool.",
+    "A large brown dog laying on top of a pool of water."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000430961.jpg",
+   "ours_top3": [
+    "A pitcher throwing a pitch in a baseball game.",
+    "A baseball pitcher throwing a pitch from the mound.",
+    "A pitcher is throwing a pitch in a baseball game."
+   ],
+   "paper_top3": [
+    "A pitcher throwing a pitch in a baseball game.",
+    "A baseball pitcher throwing a pitch from the mound.",
+    "A pitcher is throwing a pitch in a baseball game."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000299116.jpg",
+   "ours_top3": [
+    "A young girl is eating a hot dog.",
+    "A young girl eating a hot dog at a restaurant.",
+    "A young girl eating a hot dog at a table."
+   ],
+   "paper_top3": [
+    "A young girl is eating a hot dog.",
+    "A young girl eating a hot dog at a restaurant.",
+    "A young girl eating a hot dog at a table."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000410002.jpg",
+   "ours_top3": [
+    "A display case filled with donuts and pastries.",
+    "A display case filled with pastries and donuts.",
+    "A display case filled with doughnuts and pastries."
+   ],
+   "paper_top3": [
+    "A display case filled with donuts and pastries.",
+    "A display case filled with pastries and donuts.",
+    "A display case filled with doughnuts and pastries."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000244339.jpg",
+   "ours_top3": [
+    "A man that is standing in the middle of a green field.",
+    "A man that is standing in front of a green screen.",
+    "A man that is standing up with a tennis racket."
+   ],
+   "paper_top3": [
+    "A man that is standing in the middle of a green field.",
+    "A man that is standing in front of a green screen.",
+    "A man that is standing up with a tennis racket."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  },
+  {
+   "image": "COCO_val2014_000000224757.jpg",
+   "ours_top3": [
+    "A group of kids playing a game of soccer.",
+    "A group of kids are playing a game of soccer.",
+    "A group of kids are playing with a soccer ball."
+   ],
+   "paper_top3": [
+    "A group of kids playing a game of soccer.",
+    "A group of kids are playing a game of soccer.",
+    "A group of kids are playing with a soccer ball."
+   ],
+   "same_kept": true,
+   "same_entities": true
+  }
+ ]
+}

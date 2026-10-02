@@ -1,0 +1,507 @@
+{
+ "n": 5000,
+ "retrieval_exact": "4882/5000",
+ "retrieval_same_set": "4977/5000",
+ "mismatches": [
+  {
+   "image": "COCO_val2014_000000329717.jpg",
+   "ours": [
+    "A small child sitting inside a suitcase sitting on their knee's.",
+    "A small child that is sitting in a piece of luggage.",
+    "A baby is looking at the viewer as they stand next to a suitcase.",
+    "A small child sitting in a big suitcase.",
+    "A small baby siting in an open piece of luggage.",
+    "A little kid sitting in a suit case.",
+    "There is a baby sitting on a suitcase.",
+    "A baby in pinks shirt sitting in an open suitcase.",
+    "A small child sitting in a half filled suitcase."
+   ],
+   "paper": [
+    "A small child sitting inside a suitcase sitting on their knee's.",
+    "A small child that is sitting in a piece of luggage.",
+    "A baby is looking at the viewer as they stand next to a suitcase.",
+    "A small child sitting in a big suitcase.",
+    "A little kid sitting in a suit case.",
+    "A small baby siting in an open piece of luggage.",
+    "There is a baby sitting on a suitcase.",
+    "A baby in pinks shirt sitting in an open suitcase.",
+    "A small child sitting in a half filled suitcase."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000129637.jpg",
+   "ours": [
+    "Several horses that are standing next to each other.",
+    "A white horse standing between two brown horses.",
+    "Three brown with white horses, and one white horse staring at the camera.",
+    "Some white brown and black  horses standing around in their stall.",
+    "A group of horses standing around in a line.",
+    "Three horses are standing outside in the show.",
+    "Some small toy horses hanging on some strings.",
+    "A number of horses near one another on a stage.",
+    "Two adult brown horses and a baby white and brown horse."
+   ],
+   "paper": [
+    "A white horse standing between two brown horses.",
+    "Several horses that are standing next to each other.",
+    "Three brown with white horses, and one white horse staring at the camera.",
+    "Some white brown and black  horses standing around in their stall.",
+    "A group of horses standing around in a line.",
+    "Three horses are standing outside in the show.",
+    "Some small toy horses hanging on some strings.",
+    "A number of horses near one another on a stage.",
+    "Two adult brown horses and a baby white and brown horse."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000507065.jpg",
+   "ours": [
+    "The boy with the sunglasses takes a bite out of his hoagie sandwich.",
+    "A little boy with sunglasses on his head eating a sandwich.",
+    "He is intent on another bite of the sandwich.",
+    "Someone has eaten most of his lunch sandwich.",
+    "A young boy with sunglasses on top of his head eating a sandwich.",
+    "A kid eats a sandwich on a picnic bench.",
+    "A white kid with dreadlocks eating a large sandwich.",
+    "The young boy is eating his sandwich outside.",
+    "A little boy eating a big sub sandwich."
+   ],
+   "paper": [
+    "The boy with the sunglasses takes a bite out of his hoagie sandwich.",
+    "A little boy with sunglasses on his head eating a sandwich.",
+    "He is intent on another bite of the sandwich.",
+    "Someone has eaten most of his lunch sandwich.",
+    "A young boy with sunglasses on top of his head eating a sandwich.",
+    "A white kid with dreadlocks eating a large sandwich.",
+    "A kid eats a sandwich on a picnic bench.",
+    "The young boy is eating his sandwich outside.",
+    "A little boy eating a big sub sandwich."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000353136.jpg",
+   "ours": [
+    "A cat being fed a donut by someone in a grey shirt.",
+    "A cat gets his belly rubbed in front of a mirror.",
+    "A person in a room holding a cat.",
+    "A man sits in front of a window petting a cat.",
+    "A vet getting a cat's attention with feathers.",
+    "A person and a cat sitting in a room.",
+    "Grey cat being help up by a woman in a white shirt.",
+    "A person sitting down with a cat.",
+    "A young woman lying on a bed in front of a window petting a black and white cat."
+   ],
+   "paper": [
+    "A cat being fed a donut by someone in a grey shirt.",
+    "A cat gets his belly rubbed in front of a mirror.",
+    "A person in a room holding a cat.",
+    "A man sits in front of a window petting a cat.",
+    "A vet getting a cat's attention with feathers.",
+    "A person and a cat sitting in a room.",
+    "A person sitting down with a cat.",
+    "Grey cat being help up by a woman in a white shirt.",
+    "A young woman lying on a bed in front of a window petting a black and white cat."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000045057.jpg",
+   "ours": [
+    "A pizza with lots of sauce, cheese and mushrooms.",
+    "A pizza with mushrooms, sauce and cheese is shown.",
+    "This partly eaten pizza, still in its cardboard container, includes clams in its toppings.",
+    "A pizza with lots of mushrooms is seen here.",
+    "A hastily Mae pizza with Alfredo sauce and mushrooms.",
+    "A homemade pizza in the oven: half cheese, half mushroom.",
+    "A cooked pizza with cheese, mushrooms and various toppings.",
+    "A pizza covered in cheese and mushrooms and sauce.",
+    "A freshly cut pepperoni and mushroom pizza for sale."
+   ],
+   "paper": [
+    "A pizza with lots of sauce, cheese and mushrooms.",
+    "A pizza with mushrooms, sauce and cheese is shown.",
+    "This partly eaten pizza, still in its cardboard container, includes clams in its toppings.",
+    "A pizza with lots of mushrooms is seen here.",
+    "A hastily Mae pizza with Alfredo sauce and mushrooms.",
+    "A cooked pizza with cheese, mushrooms and various toppings.",
+    "A homemade pizza in the oven: half cheese, half mushroom.",
+    "A pizza covered in cheese and mushrooms and sauce.",
+    "A freshly cut pepperoni and mushroom pizza for sale."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000326082.jpg",
+   "ours": [
+    "An image of an ordinary looking living room.",
+    "A picture of someone's large, clean living room.",
+    "A picture of a very nice room in a house.",
+    "A living room with a coffee table in the middle on a white and black striped rug.",
+    "A living room in a small apartment complex.",
+    "A living room with chair and coffee table and a zebra patterned rug.",
+    "Here is a modern living room, complete with ugly furniture and hideous curtains.",
+    "A neat and tidy living room during the day time.",
+    "A modern looking living room in an apartment."
+   ],
+   "paper": [
+    "An image of an ordinary looking living room.",
+    "A picture of someone's large, clean living room.",
+    "A picture of a very nice room in a house.",
+    "A living room with a coffee table in the middle on a white and black striped rug.",
+    "A living room in a small apartment complex.",
+    "A living room with chair and coffee table and a zebra patterned rug.",
+    "Here is a modern living room, complete with ugly furniture and hideous curtains.",
+    "A neat and tidy living room during the day time.",
+    "The living room has been decorated, but no one is in there."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000320180.jpg",
+   "ours": [
+    "Black and white photograph of a woman watching her computer in bed.",
+    "There is a wioman laying on her bed next to a lap top.",
+    "A laptop on a person's legs on a couch.",
+    "Black and white photograph of someone using a computer on a bed.",
+    "A black and white photograph of a messy bed and laptop.",
+    "A woman sitting in a bed with a laptop on her belly.",
+    "A laptop sits in between a persons legs.",
+    "Black and white artistic shot of a laptop on a bed.",
+    "There is a person laying on a bed using a lap top."
+   ],
+   "paper": [
+    "Black and white photograph of a woman watching her computer in bed.",
+    "There is a wioman laying on her bed next to a lap top.",
+    "A laptop on a person's legs on a couch.",
+    "Black and white photograph of someone using a computer on a bed.",
+    "A black and white photograph of a messy bed and laptop.",
+    "A woman sitting in a bed with a laptop on her belly.",
+    "A laptop sits in between a persons legs.",
+    "There is a person laying on a bed using a lap top.",
+    "Black and white artistic shot of a laptop on a bed."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000289469.jpg",
+   "ours": [
+    "A plate of pasta, steam broccoli, and potato fries.",
+    "The plate has macaroni and cheese and broccoli on it.",
+    "A plate of macaroni and cheese, onion rings, and broccoli.",
+    "Fried food with a side of broccoli and pasta.",
+    "A yummy meal with noodles and broccoli and cheese.",
+    "A very tasty looking dish with some broccoli and other items.",
+    "A very tasty looking dish with some pasta and broccoli.",
+    "Some macaroni and broccoli are on a plate.",
+    "A child's plate with brocolli, chicken, and noodles."
+   ],
+   "paper": [
+    "A plate of pasta, steam broccoli, and potato fries.",
+    "The plate has macaroni and cheese and broccoli on it.",
+    "A plate of macaroni and cheese, onion rings, and broccoli.",
+    "Fried food with a side of broccoli and pasta.",
+    "A yummy meal with noodles and broccoli and cheese.",
+    "A very tasty looking dish with some broccoli and other items.",
+    "Some macaroni and broccoli are on a plate.",
+    "A very tasty looking dish with some pasta and broccoli.",
+    "A child's plate with brocolli, chicken, and noodles."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000231732.jpg",
+   "ours": [
+    "The sink is on a counter with nothing else.",
+    "This is someones bathroom sink in their home.",
+    "A picture of a very clean sink in a room.",
+    "A sink has soap and mouthwash on top of it.",
+    "A bathroom sink with a bottle of cleaning solution on it.",
+    "There is a small bottle of hand soap on the sink.",
+    "A picture of a very clean sink in the bathroom.",
+    "A picture of a very clean sink in the bathroom.",
+    "A beige bathroom sink has mouthwash on it."
+   ],
+   "paper": [
+    "This is someones bathroom sink in their home.",
+    "The sink is on a counter with nothing else.",
+    "A picture of a very clean sink in a room.",
+    "A sink has soap and mouthwash on top of it.",
+    "A bathroom sink with a bottle of cleaning solution on it.",
+    "There is a small bottle of hand soap on the sink.",
+    "A picture of a very clean sink in the bathroom.",
+    "A picture of a very clean sink in the bathroom.",
+    "A beige bathroom sink has mouthwash on it."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000262514.jpg",
+   "ours": [
+    "A toilet with a sink built into the back of it.",
+    "A high-tech toilet and integrated sink of the Japanese variety.",
+    "A fancy toilet, including a sink on the back and controls on the side.",
+    "A toilet is on display at a trade show.",
+    "This is the porcelain toilet of the future perhaps,",
+    "A toilet also made into a sink with pipe running too it.",
+    "A toilet and sink connected to one box.",
+    "A toilet that was converted into a fountain.",
+    "Looks like a very unique decorative toilet contest."
+   ],
+   "paper": [
+    "A toilet with a sink built into the back of it.",
+    "A high-tech toilet and integrated sink of the Japanese variety.",
+    "A fancy toilet, including a sink on the back and controls on the side.",
+    "A toilet is on display at a trade show.",
+    "This is the porcelain toilet of the future perhaps,",
+    "A toilet also made into a sink with pipe running too it.",
+    "A toilet and sink connected to one box.",
+    "A toilet that was converted into a fountain.",
+    "An unusual looking toilet with a wooden seat."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000370749.jpg",
+   "ours": [
+    "A large gray elephant standing on a lush green field.",
+    "A large gray elephant standing on a lush green field.",
+    "An elephant standing around in a grassy area.",
+    "A large elephant standing next to a lush green field.",
+    "An elephant roaming the grassy areas in his natural habitat.",
+    "A large gray elephant standing in a lush green field.",
+    "A large gray elephant standing in a lush green field.",
+    "A large gray elephant standing in a  lush green field.",
+    "An elephant standing the grass with trees in the background."
+   ],
+   "paper": [
+    "A large gray elephant standing on a lush green field.",
+    "A large gray elephant standing on a lush green field.",
+    "An elephant standing around in a grassy area.",
+    "A large elephant standing next to a lush green field.",
+    "An elephant roaming the grassy areas in his natural habitat.",
+    "A large gray elephant standing in a lush green field.",
+    "A large gray elephant standing in a  lush green field.",
+    "A large gray elephant standing in a lush green field.",
+    "An elephant standing the grass with trees in the background."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000279524.jpg",
+   "ours": [
+    "A living room filled with furniture in front of a flat screen TV.",
+    "A living room filled with brown furniture and a flat screen TV..",
+    "That dark furniture looks a bit heavy for that small living room.",
+    "A living room filled with furniture and a small flat screen Tv.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV."
+   ],
+   "paper": [
+    "A living room filled with furniture in front of a flat screen TV.",
+    "A living room filled with brown furniture and a flat screen TV..",
+    "That dark furniture looks a bit heavy for that small living room.",
+    "A living room filled with furniture and a small flat screen Tv.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen TV.",
+    "A living room filled with furniture and a flat screen tv."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000520430.jpg",
+   "ours": [
+    "A young woman holding a wiimote all excited while playing a game.",
+    "Woman in midst of a Wii activity, holding the remote and smiling.",
+    "A young woman using a Wii controller playing a game and laughing.",
+    "A young lady making a silly face is playing the Wii.",
+    "A woman stands with her teeth showing while holding a Wii remote.",
+    "A young woman stands with a Wii remote in her hand.",
+    "A girl in a sweater play with a Wii.",
+    "A woman in a green sweater holding a cup.",
+    "A person that is smiling for a picture."
+   ],
+   "paper": [
+    "A young woman holding a wiimote all excited while playing a game.",
+    "Woman in midst of a Wii activity, holding the remote and smiling.",
+    "A young woman using a Wii controller playing a game and laughing.",
+    "A young lady making a silly face is playing the Wii.",
+    "A woman stands with her teeth showing while holding a Wii remote.",
+    "A young woman stands with a Wii remote in her hand.",
+    "A girl in a sweater play with a Wii.",
+    "A woman in a green sweater holding a cup.",
+    "A person wearing a green sweater plays a Wii."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000415727.jpg",
+   "ours": [
+    "A boy getting ready for a little league game.",
+    "The boy wearing the number 14 is getting ready to bat.",
+    "A baseball player chooses which bat he should use.",
+    "A baseball player checks things out before the next pitch.",
+    "The two ball players are setting in the dug out.",
+    "An on deck baseball player analyses his teammates' at bat.",
+    "Baseball players sitting in the dugout with their equipment.",
+    "One of the Twins baseball players is up to bat.",
+    "A baseball team in the dugout preparing to bat."
+   ],
+   "paper": [
+    "A boy getting ready for a little league game.",
+    "The boy wearing the number 14 is getting ready to bat.",
+    "A baseball player chooses which bat he should use.",
+    "A baseball player checks things out before the next pitch.",
+    "The two ball players are setting in the dug out.",
+    "An on deck baseball player analyses his teammates' at bat.",
+    "Baseball players sitting in the dugout with their equipment.",
+    "A baseball team in the dugout preparing to bat.",
+    "One of the Twins baseball players is up to bat."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000046099.jpg",
+   "ours": [
+    "A stop sign with the work stop written in Arabic.",
+    "A stop sign with some arabic writing on the bottom of it.",
+    "A stop sign with the word stop in Arabic.",
+    "Here is a stop sign with graffiti written on it.",
+    "A stop sign marked with anti-war graffiti to say \"Stop The War.\"",
+    "Picture of a stop sign with graffiti written on it.",
+    "The stop sign has some graffiti on it.",
+    "This stop sign is in a different language but its meaning is universal.",
+    "A stop sign that has some foreign writing on it."
+   ],
+   "paper": [
+    "A stop sign with the work stop written in Arabic.",
+    "A stop sign with the word stop in Arabic.",
+    "A stop sign with some arabic writing on the bottom of it.",
+    "Here is a stop sign with graffiti written on it.",
+    "A stop sign marked with anti-war graffiti to say \"Stop The War.\"",
+    "Picture of a stop sign with graffiti written on it.",
+    "The stop sign has some graffiti on it.",
+    "This stop sign is in a different language but its meaning is universal.",
+    "A stop sign that has some foreign writing on it."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000500703.jpg",
+   "ours": [
+    "A train pulls into a aubway station where people stand.",
+    "Many people walk along a train platform of the r train.",
+    "Many train tracks have access to the large city train terminal.",
+    "A subway station with a subway coming up the West 4 track and people waiting on the platform.",
+    "A subway train stopped at an elevated station.",
+    "People standing on side of subway track waiting for train.",
+    "A dirty subway platform with a train waiting.",
+    "A group of people are standing by a train track waiting for the subway.",
+    "A train next to a train station with city in background."
+   ],
+   "paper": [
+    "A train pulls into a aubway station where people stand.",
+    "Many people walk along a train platform of the r train.",
+    "Many train tracks have access to the large city train terminal.",
+    "A subway station with a subway coming up the West 4 track and people waiting on the platform.",
+    "A subway train stopped at an elevated station.",
+    "People standing on side of subway track waiting for train.",
+    "A group of people are standing by a train track waiting for the subway.",
+    "A dirty subway platform with a train waiting.",
+    "A train next to a train station with city in background."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000566529.jpg",
+   "ours": [
+    "A smiling bearded man hugging a stuffed animal.",
+    "A bearded man being hugged by a teddy bear.",
+    "A man wearing glasses is cuddling a blue teddy bear.",
+    "A man wearing a watch holding a blue teddy bear.",
+    "A man lays in a hospital bed while holding a teddy bear.",
+    "A man sitting in a bed with a stuffed animal in his lap.",
+    "A man in black shirt laying on bed with a teddy bear.",
+    "A man is in a hospital bed has a teddy bear.",
+    "A young man is holding a blue teddy bear."
+   ],
+   "paper": [
+    "A smiling bearded man hugging a stuffed animal.",
+    "A bearded man being hugged by a teddy bear.",
+    "A man wearing glasses is cuddling a blue teddy bear.",
+    "A man wearing a watch holding a blue teddy bear.",
+    "A man lays in a hospital bed while holding a teddy bear.",
+    "A man sitting in a bed with a stuffed animal in his lap.",
+    "A man in black shirt laying on bed with a teddy bear.",
+    "A young man is holding a blue teddy bear.",
+    "A man is in a hospital bed has a teddy bear."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000135281.jpg",
+   "ours": [
+    "They are sharing they umbrella while walking down the street.",
+    "Couple with Umbrella walking down city street at night.",
+    "Two people are standing under clear umbrellas in the street.",
+    "Two women walking down the street under their umbrella.",
+    "Two women walk under an umbrella on a city street.",
+    "Two girls walking down the street under an umbrella.",
+    "Two people in coats walk together under an umbrella.",
+    "Two women walking in the street under their umbrella.",
+    "Two people share an umbrella while walking down a rainy city street."
+   ],
+   "paper": [
+    "They are sharing they umbrella while walking down the street.",
+    "Couple with Umbrella walking down city street at night.",
+    "Two people are standing under clear umbrellas in the street.",
+    "Two women walking down the street under their umbrella.",
+    "Two women walk under an umbrella on a city street.",
+    "Two people in coats walk together under an umbrella.",
+    "Two girls walking down the street under an umbrella.",
+    "Two women walking in the street under their umbrella.",
+    "Two people share an umbrella while walking down a rainy city street."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000302599.jpg",
+   "ours": [
+    "A skateboarder doing a trick in a parking lot while other skateboarders look on.",
+    "Some people are watching a skateboard skater make a jump.",
+    "A coupe of people that are skateboarding on a ramp.",
+    "A couple of guys are trying to nail tricks on their skateboards .",
+    "A skateboarders slides down a rail over a jeep.",
+    "A skater doing a trick for two other skaters.",
+    "The skateboarders are watching the other person who is doing stunts.",
+    "That guy on the skateboard is certainly wearing a hat.",
+    "Two onlookers watching a man doing skateboard stunts."
+   ],
+   "paper": [
+    "A skateboarder doing a trick in a parking lot while other skateboarders look on.",
+    "Some people are watching a skateboard skater make a jump.",
+    "A coupe of people that are skateboarding on a ramp.",
+    "A couple of guys are trying to nail tricks on their skateboards .",
+    "A skateboarders slides down a rail over a jeep.",
+    "A skater doing a trick for two other skaters.",
+    "The skateboarders are watching the other person who is doing stunts.",
+    "Two onlookers watching a man doing skateboard stunts.",
+    "That guy on the skateboard is certainly wearing a hat."
+   ]
+  },
+  {
+   "image": "COCO_val2014_000000553558.jpg",
+   "ours": [
+    "A hairdressing room with strange eupiment, some kind of sink.",
+    "A bathroom that has some random stuff in it.",
+    "An image of a messy counter in a bathroom.",
+    "A bathroom with cluttered vanity and full garbage.",
+    "A bathroom sink and mirror with someone personal belongings on it.",
+    "A bathroom with its clutter sink counter is displayed.",
+    "A small barhroom with everything close to each other.",
+    "A white sink and table in a room.",
+    "A sink sitting in a bathroom on a table."
+   ],
+   "paper": [
+    "A hairdressing room with strange eupiment, some kind of sink.",
+    "A bathroom that has some random stuff in it.",
+    "An image of a messy counter in a bathroom.",
+    "A bathroom with cluttered vanity and full garbage.",
+    "A bathroom sink and mirror with someone personal belongings on it.",
+    "A bathroom with its clutter sink counter is displayed.",
+    "A small barhroom with everything close to each other.",
+    "A sink sitting in a bathroom on a table.",
+    "A white sink and table in a room."
+   ]
+  }
+ ]
+}

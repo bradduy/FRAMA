@@ -1,0 +1,6 @@
+{
+ "stored_feats_beam_match": 93,
+ "recomputed_feats_beam_match": 83,
+ "recomputed_feats_batch5_text_match": 79,
+ "min_cos_stored_vs_recomputed": 0.9999958276748657
+}
