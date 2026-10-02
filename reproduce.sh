@@ -5,7 +5,7 @@
 #   ./reproduce.sh          main tables: baselines, FRAMA stacks on COCO / NoCaps / Flickr30k,
 #                           grounding, leave-one-out ablation, reliability weighting, ViECap transfer
 #   ./reproduce.sh all      main tables plus verifier ladder, small judges, wider beams and the
-#                           revision controls (adds about an hour of pure-Python MBR on beams of 40 and 80)
+#                           revision controls; about 50 minutes in total, mostly pure-Python MBR on beams of 40 and 80
 #
 # Prediction files land in preds/<benchmark>/<rule>__<split>.json. Score them with
 # ./evaluate_official.sh after ./setup_eval.sh, then compare against reference_results/.
@@ -57,5 +57,8 @@ if [ "$MODE" = "all" ]; then
   $PY revision/analyze_m4.py nocaps
   $PY revision/pairwise_corr.py
 fi
+
+step "NoCaps in-domain and near-domain splits"
+$PY split_nocaps_preds.py
 
 step "done: $(find preds -name '*.json' | wc -l | tr -d ' ') prediction files under preds/"

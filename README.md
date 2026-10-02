@@ -18,16 +18,16 @@ equal weights. Nothing is trained or tuned on any evaluation image.
 | 2. Official metrics of those files | Java 11, the IFCap evaluation toolkit | `./setup_eval.sh`, `./evaluate_official.sh`, `python3 compare_results.py` |
 | 3. Recompute the agent scores from the beam dumps | GPU, COCO / NoCaps / Flickr30k images | scorer scripts below |
 
-Level 1 is exact: on a clean checkout the scripts regenerate the prediction files we scored
-byte for byte. Level 2 compares your official scores against `reference_results/official_metrics/`,
+Level 1 is exact: on a clean checkout, `./reproduce.sh all` regenerates all 274 prediction files
+we scored for the paper byte for byte. Level 2 compares your official scores against `reference_results/official_metrics/`,
 the files every table of the paper was filled from.
 
 ### Level 1: prediction files (CPU)
 
 ```bash
 pip install -r requirements.txt
-./reproduce.sh        # main tables, about 15 minutes
-./reproduce.sh all    # adds verifier ladder, small judges, wider beams, revision controls
+./reproduce.sh        # main tables, about 10 minutes on one CPU core
+./reproduce.sh all    # adds verifier ladder, small judges, wider beams, revision controls; about 50 minutes
 ```
 
 Selected captions are written to `preds/<benchmark>/<rule>__<split>.json` in the IFCap evaluation

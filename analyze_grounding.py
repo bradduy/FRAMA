@@ -190,7 +190,9 @@ if __name__ == "__main__":
         # Paired subset files for the VQA block: same images for baseline and combos,
         # so the official metric comparison is like-for-like.
         if V is not None:
-            has_v = ~np.isnan(V).any(axis=1)
+            # the VQA block was scored on the 1-in-5 subsample (blip2vqa_scorer.py --stride 5):
+            # 1,000 COCO and 900 NoCaps images, kept fixed now that the released scores cover every image
+            has_v = ~np.isnan(V).any(axis=1) & (np.arange(len(beams)) % 5 == 0)
             Vf = V.copy(); Vf[~has_v] = 0.0
             LM, BG, BL = feats[..., 0], feats[..., 1], feats[..., 2]
             base3 = z(LM) + z(BG) + z(BL)

@@ -60,7 +60,7 @@ print("within-beam rho: " + "  ".join(f"{nm} {np.nanmean([spearmanr(s[i], M[i]).
 # paired IFCap rows on the same images
 keep = set(b["image_name"] for b in beams)
 os.makedirs(os.path.join(HERE, "preds", "coco_ifcapsub"), exist_ok=True)
-for name in rules:
+for name in list(rules) + ["loo_minus_VQA"]:  # loo_minus_VQA, from analyze_ablation.py, is the five-agent row without a judge
     src = os.path.join(HERE, "preds", "coco", f"{name}__overall.json")
     if not os.path.exists(src): continue
     sub = [r for r in json.load(open(src)) if r["image_name"] in keep]
