@@ -191,13 +191,15 @@ def write_tab_stats():
     os.makedirs(TAB, exist_ok=True)
     L = [r"\begin{table*}[t]", r"\centering\scriptsize",
          r"\caption{Paired bootstrap comparisons over images, 10,000 resamples, 95\% percentile intervals, official metrics. $\Delta$ is the first selector minus the second; for CHAIR$_s$ a negative $\Delta$ means fewer captions with a hallucinated object. Block A is the pre-registered family with Holm-adjusted $p$-values for \cider{}; block B gives the held-out-reference quantities of \cref{tab:xref}; block C gives further comparisons quoted in the text, with unadjusted $p$-values. Changed is the share of images on which the two selections differ, and gain if changed the mean \cider{} difference on those images. $\Delta$ is computed from unrounded scores and can differ by 0.1 from the difference of the rounded values in the other tables.}\label{tab:stats}",
-         r"\setlength{\tabcolsep}{3pt}", r"\begin{tabular}{@{}llrrrrrr@{}}", r"\toprule",
-         r"Benchmark & Comparison & $\Delta$\cider{} & $p$ & $\Delta$\spice{} & $\Delta$CHAIR$_s$ & Changed & Gain if changed \\", r"\midrule",
+         r"\setlength{\tabcolsep}{2pt}", r"\begin{tabular}{@{}llrrrrrr@{}}", r"\toprule",
+         r"Benchmark & Comparison & $\Delta$\cider{} & $p$ & $\Delta$\spice{} & $\Delta$CHAIR$_s$ & Changed & \shortstack[r]{Gain if\\changed} \\", r"\midrule",
          r"\multicolumn{8}{@{}l}{\emph{A. Pre-registered family, Holm-adjusted}} \\"]
     def row(r, pkey):
         sp = fmt(r["dSPICE"], r["ci_SPICE"], 2) if "dSPICE" in r else "--"
         ch = fmt(r["dCHAIRs"], r["ci_CHAIRs"], 2) if "dCHAIRs" in r else "--"
-        return (f"{NAME[r['bench']]} & {LABEL.get(r['a'], r['a'])} vs {LABEL.get(r['b'], r['b'])} & {fmt(r['dCIDEr'], r['ci_CIDEr'])} & "
+        comp = f"{LABEL.get(r['a'], r['a'])} vs {LABEL.get(r['b'], r['b'])}".replace(
+            "six agents, Flickr30k ITM vs three-agent sum, Flickr30k ITM", "Flickr30k ITM: six agents vs three-agent sum")
+        return (f"{NAME[r['bench']]} & {comp} & {fmt(r['dCIDEr'], r['ci_CIDEr'])} & "
                 f"{fp(r[pkey])} & {sp} & {ch} & {100 * r['changed']:.0f}\\% & {r['gain_if_changed']:+.1f} \\\\")
     for r in OUT["family"]:
         L.append(row(r, "p_holm"))

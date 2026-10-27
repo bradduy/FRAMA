@@ -1,7 +1,8 @@
 """Compare official metrics in results/ (from evaluate_official.sh) with the numbers
 reported in the paper, stored in reference_results/official_metrics/.
 
-Usage: python3 compare_results.py [results_dir]
+Usage: python3 compare_results.py [results_dir] [reference folder under reference_results/]
+  e.g. python3 compare_results.py results_r1 official_metrics_r1     for the revised paper
 Prints one row per prediction file present in both folders and the largest absolute
 difference per metric. Differences of a few 0.1 CIDEr can come from a different Java
 or tokenizer build; prediction files themselves are deterministic.
@@ -10,7 +11,7 @@ import glob, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RES = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "results")
-REF = os.path.join(HERE, "reference_results", "official_metrics")
+REF = os.path.join(HERE, "reference_results", sys.argv[2] if len(sys.argv) > 2 else "official_metrics")
 KEYS = ("Bleu_4", "METEOR", "ROUGE_L", "CIDEr", "SPICE")
 
 

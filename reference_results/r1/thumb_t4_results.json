@@ -1,0 +1,308 @@
+{
+ "n_images": 500,
+ "random_choice": {
+  "H": 4.099600000000001,
+  "P": 4.4135,
+  "R": 3.7975
+ },
+ "human_best_pick": {
+  "H": 4.442799999999999
+ },
+ "selectors": {
+  "CIDEr, four references (leakage-free), fold mean": {
+   "H": 4.24248,
+   "ci_H": [
+    4.197119,
+    4.286761
+   ],
+   "H_minus_random": 0.14288,
+   "ci_H_minus_random": [
+    0.11453949999999999,
+    0.17180125
+   ]
+  },
+  "bigG alone": {
+   "H": 4.2716,
+   "ci_H": [
+    4.2208000000000006,
+    4.3212
+   ],
+   "P": 4.556,
+   "R": 3.992,
+   "H_minus_random": 0.172,
+   "ci_H_minus_random": [
+    0.13799875,
+    0.2058
+   ],
+   "pairwise_agreement": 0.7371323529411765,
+   "H_minus_BLIP-ITM": -0.021,
+   "ci_H_minus_BLIP-ITM": [
+    -0.0512,
+    0.0092
+   ]
+  },
+  "BLIP-ITM alone": {
+   "H": 4.2926,
+   "ci_H": [
+    4.241395,
+    4.3424
+   ],
+   "P": 4.56,
+   "R": 4.034,
+   "H_minus_random": 0.193,
+   "ci_H_minus_random": [
+    0.16039875,
+    0.22565000000000004
+   ],
+   "pairwise_agreement": 0.7640931372549019,
+   "H_minus_bigG": 0.021,
+   "ci_H_minus_bigG": [
+    -0.0092,
+    0.0512
+   ]
+  },
+  "System One verifier alone": {
+   "H": 4.1722,
+   "ci_H": [
+    4.1246,
+    4.218805
+   ],
+   "P": 4.576,
+   "R": 3.772,
+   "H_minus_random": 0.0726,
+   "ci_H_minus_random": [
+    0.040798749999999995,
+    0.10530124999999997
+   ],
+   "pairwise_agreement": 0.6231617647058824,
+   "H_minus_bigG": -0.0994,
+   "ci_H_minus_bigG": [
+    -0.1424,
+    -0.0558
+   ],
+   "H_minus_BLIP-ITM": -0.12040000000000001,
+   "ci_H_minus_BLIP-ITM": [
+    -0.16140500000000002,
+    -0.07780000000000001
+   ]
+  },
+  "consensus alone": {
+   "H": 4.179,
+   "ci_H": [
+    4.1275949999999995,
+    4.2292000000000005
+   ],
+   "P": 4.5,
+   "R": 3.864,
+   "H_minus_random": 0.07940000000000001,
+   "ci_H_minus_random": [
+    0.05160000000000001,
+    0.10725000000000001
+   ],
+   "pairwise_agreement": 0.6452205882352942,
+   "H_minus_bigG": -0.0926,
+   "ci_H_minus_bigG": [
+    -0.1368,
+    -0.048400000000000006
+   ],
+   "H_minus_BLIP-ITM": -0.1136,
+   "ci_H_minus_BLIP-ITM": [
+    -0.15540500000000002,
+    -0.07280000000000002
+   ]
+  },
+  "grounding alone": {
+   "H": 4.097,
+   "ci_H": [
+    4.0442,
+    4.149
+   ],
+   "P": 4.48,
+   "R": 3.732,
+   "H_minus_random": -0.0025999999999999942,
+   "ci_H_minus_random": [
+    -0.036699999999999997,
+    0.03270000000000001
+   ],
+   "pairwise_agreement": 0.5422794117647058,
+   "H_minus_bigG": -0.17460000000000003,
+   "ci_H_minus_bigG": [
+    -0.220005,
+    -0.12940000000000002
+   ],
+   "H_minus_BLIP-ITM": -0.19560000000000002,
+   "ci_H_minus_BLIP-ITM": [
+    -0.24039999999999997,
+    -0.15080000000000002
+   ]
+  },
+  "z-sum bigG + BLIP-ITM": {
+   "H": 4.2814000000000005,
+   "ci_H": [
+    4.23,
+    4.3324
+   ],
+   "P": 4.536,
+   "R": 4.032,
+   "H_minus_random": 0.18180000000000002,
+   "ci_H_minus_random": [
+    0.14805000000000001,
+    0.2149
+   ],
+   "pairwise_agreement": 0.7689950980392157,
+   "H_minus_bigG": 0.009800000000000001,
+   "ci_H_minus_bigG": [
+    -0.0128,
+    0.0316
+   ],
+   "H_minus_BLIP-ITM": -0.011200000000000002,
+   "ci_H_minus_BLIP-ITM": [
+    -0.0332,
+    0.009800000000000001
+   ]
+  },
+  "z-sum bigG + BLIP-ITM + System One": {
+   "H": 4.2856000000000005,
+   "ci_H": [
+    4.235195,
+    4.3342
+   ],
+   "P": 4.588,
+   "R": 3.988,
+   "H_minus_random": 0.186,
+   "ci_H_minus_random": [
+    0.15314875000000003,
+    0.2194
+   ],
+   "pairwise_agreement": 0.7573529411764706,
+   "H_minus_bigG": 0.014000000000000002,
+   "ci_H_minus_bigG": [
+    -0.011399999999999999,
+    0.0412
+   ],
+   "H_minus_BLIP-ITM": -0.007,
+   "ci_H_minus_BLIP-ITM": [
+    -0.0288,
+    0.015604999999999928
+   ]
+  },
+  "five-agent FRAMA, equal weights": {
+   "H": 4.2666,
+   "ci_H": [
+    4.2176,
+    4.3152
+   ],
+   "P": 4.616,
+   "R": 3.922,
+   "H_minus_random": 0.167,
+   "ci_H_minus_random": [
+    0.1367,
+    0.19795
+   ],
+   "pairwise_agreement": 0.7591911764705882,
+   "H_minus_bigG": -0.004999999999999998,
+   "ci_H_minus_bigG": [
+    -0.037,
+    0.026199999999999998
+   ],
+   "H_minus_BLIP-ITM": -0.026,
+   "ci_H_minus_BLIP-ITM": [
+    -0.056799999999999996,
+    0.004599999999999998
+   ]
+  },
+  "CIDEr, five references (reference-selected)": {
+   "H": 4.2578,
+   "ci_H": [
+    4.21,
+    4.304399999999999
+   ],
+   "P": 4.614,
+   "R": 3.91,
+   "H_minus_random": 0.1582,
+   "ci_H_minus_random": [
+    0.12675000000000003,
+    0.19029999999999997
+   ],
+   "pairwise_agreement": 0.7107843137254902,
+   "H_minus_bigG": -0.013800000000000003,
+   "ci_H_minus_bigG": [
+    -0.048600000000000004,
+    0.021799999999999996
+   ],
+   "H_minus_BLIP-ITM": -0.03480000000000001,
+   "ci_H_minus_BLIP-ITM": [
+    -0.0704,
+    0.00020499999999992638
+   ]
+  },
+  "system Up-Down": {
+   "H": 3.8838000000000004,
+   "ci_H": [
+    3.827395,
+    3.9386
+   ],
+   "P": 4.292,
+   "R": 3.504,
+   "H_minus_random": -0.21580000000000002,
+   "ci_H_minus_random": [
+    -0.2495,
+    -0.1822
+   ]
+  },
+  "system Unified-VLP": {
+   "H": 4.0582,
+   "ci_H": [
+    4.0047950000000005,
+    4.1108
+   ],
+   "P": 4.354,
+   "R": 3.77,
+   "H_minus_random": -0.0414,
+   "ci_H_minus_random": [
+    -0.07145125000000001,
+    -0.010798750000000011
+   ]
+  },
+  "system VinVL-base": {
+   "H": 4.2082,
+   "ci_H": [
+    4.1564,
+    4.2578
+   ],
+   "P": 4.472,
+   "R": 3.946,
+   "H_minus_random": 0.1086,
+   "ci_H_minus_random": [
+    0.07780000000000001,
+    0.13905
+   ]
+  },
+  "system VinVL-large": {
+   "H": 4.248200000000001,
+   "ci_H": [
+    4.1988,
+    4.2968
+   ],
+   "P": 4.536,
+   "R": 3.97,
+   "H_minus_random": 0.1486,
+   "ci_H_minus_random": [
+    0.12025,
+    0.17755
+   ]
+  }
+ },
+ "within_image_spearman_between_agents": {
+  "bigG vs BLIP-ITM": 0.4892862555063056,
+  "bigG vs System One verifier": 0.20341189674523005,
+  "bigG vs consensus": 0.1725137247527619,
+  "bigG vs grounding": 0.0689581540316726,
+  "BLIP-ITM vs System One verifier": 0.1673707838562221,
+  "BLIP-ITM vs consensus": 0.20960216393470682,
+  "BLIP-ITM vs grounding": 0.03637337356727821,
+  "System One verifier vs consensus": 0.18532086057358152,
+  "System One verifier vs grounding": 0.024588107497036955,
+  "consensus vs grounding": 0.08786508203687052
+ }
+}

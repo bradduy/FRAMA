@@ -1,0 +1,12 @@
+{
+ "stack6_all_equal__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.49,
+  "RefPAC-S++": 61.12
+ },
+ "stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+  "n": 5000,
+  "PAC-S++": 46.72,
+  "RefPAC-S++": 61.34
+ }
+}

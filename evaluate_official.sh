@@ -6,11 +6,12 @@
 #
 # Usage: ./setup_eval.sh once, then ./evaluate_official.sh [preds_subdir ...]
 #   e.g. ./evaluate_official.sh coco nocaps     (default: every subdirectory of preds/)
+#   PREDS_DIR=preds_r1 RESULTS_DIR=results_r1 ./evaluate_official.sh   for the files of the revised paper
 # Results: results/<bench>__<rule>__<split>.txt, same names as reference_results/official_metrics/.
 set -uo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 EVAL="${COCOEVAL_DIR:-$HERE/third_party/evaluation}"
-PRED="$HERE/preds"
+PRED="${PREDS_DIR:-$HERE/preds}"
 RES="${RESULTS_DIR:-$HERE/results}"
 PY="${PYTHON:-python3}"
 [ -f "$EVAL/cocoeval.py" ] || { echo "IFCap evaluation toolkit not found at $EVAL; run ./setup_eval.sh or set COCOEVAL_DIR"; exit 2; }

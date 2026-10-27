@@ -1,0 +1,9 @@
+{
+ "n": 5000,
+ "K": 20,
+ "control_n": 500,
+ "control_identical_beam": 0.948,
+ "control_identical_top1": 1.0,
+ "nococo_entities_same_as_paper": 0.5466,
+ "nococo_top1_same_as_paper": 0.4644
+}

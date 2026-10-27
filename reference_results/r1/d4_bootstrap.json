@@ -1,0 +1,29 @@
+{
+  "base": "predictions_r1/coco_d4/nococo_zsum3_lm_bigG_blip__overall.json",
+  "base_corpus_cider": 1.1476279485703083,
+  "n_images": 5000,
+  "cands": {
+    "predictions_r1/coco_d4/nococo_stack6_all_equal__overall.json": {
+      "corpus_cider": 1.1754016234724565,
+      "mean_diff": 0.027773674902148254,
+      "ci95": [
+        0.019010262448096553,
+        0.03647706209914135
+      ],
+      "p_one_sided": 0.0,
+      "frac_images_improved": 0.2736,
+      "frac_changed": 0.4716
+    },
+    "predictions_r1/coco_d4/nococo_stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+      "corpus_cider": 1.157500186665155,
+      "mean_diff": 0.009872238094846848,
+      "ci95": [
+        0.0006047999521918689,
+        0.019449944363088292
+      ],
+      "p_one_sided": 0.0174,
+      "frac_images_improved": 0.3334,
+      "frac_changed": 0.6258
+    }
+  }
+}

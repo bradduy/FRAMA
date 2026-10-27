@@ -1,0 +1,12 @@
+{
+ "stack6_all_equal__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.18,
+  "RefCLIP-S": 84.37
+ },
+ "stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json": {
+  "n": 5000,
+  "CLIP-S": 80.43,
+  "RefCLIP-S": 84.53
+ }
+}

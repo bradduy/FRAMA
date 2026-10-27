@@ -11,6 +11,9 @@ Code and outputs added for the revised manuscript. Two corrections apply to ever
 
 ## Rebuild the R1 prediction files (CPU)
 
+`../verify_r1.sh` runs the two commands below and checks every file against `reference_results/r1/predictions_r1.sha256`;
+`../check_paper.py` prints the main tables from the released results without rebuilding anything.
+
 ```bash
 ./reproduce.sh all                                   # submitted-version files in preds/ and mbr_self_*.npy
 IFCAP_ROOT=data python3 revision_r1/rebuild_preds_r1.py
