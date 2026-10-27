@@ -10,6 +10,18 @@ System One verifier; MBR, a beam-internal consensus; and ground, the mean OWLv2 
 the caption's nouns. Each score is z-normalised within the beam and the six are summed with
 equal weights. Nothing is trained or tuned on any evaluation image.
 
+## Revision R1 (October 2026)
+
+The revised manuscript corrects the beam-consensus (MBR) agent. Earlier releases computed its CIDEr-D
+document frequencies on the COCO Karpathy-test reference captions, which lets test statistics into the
+selection; R1 computes them on the captioner's training captions. The headline numbers become 120.7
+CIDEr on COCO with six agents, 82.2 on NoCaps and 72.3 on Flickr30k with five agents. The corrected
+scores are `mbr_trainidf_<benchmark>.npy`, the code and the analyses added in the revision are in
+[`revision_r1/`](revision_r1/README.md), official metrics in `reference_results/official_metrics_r1/`,
+and the prediction files in `predictions_r1/` on [Hugging Face](https://huggingface.co/bradduy/FRAMA).
+`inference/frama_infer.py` uses the corrected frequencies. The levels below reproduce the submitted
+version byte for byte; `revision_r1/rebuild_preds_r1.py` then rebuilds the R1 files from the same scores.
+
 ## Caption your own images
 
 `inference/frama_infer.py` runs the whole pipeline on any image: retrieval, the frozen IFCap
@@ -67,8 +79,9 @@ python3 compare_results.py
 ```
 
 `evaluate_official.sh` scores each prediction file with the IFCap copy of the COCO caption
-toolkit and skips files already scored. SPICE needs Java 11. Expected values, from
-`reference_results/official_metrics/`:
+toolkit and skips files already scored. SPICE needs Java 11. Expected values of the submitted version,
+with the test-reference MBR frequencies, from `reference_results/official_metrics/`; the R1 values are in
+`revision_r1/README.md`:
 
 | Benchmark | LM top-1 | z-sum of 3 | FRAMA, 6 agents | FRAMA, 5 agents without LM |
 |---|---|---|---|---|
@@ -100,7 +113,7 @@ python blip2vqa_scorer.py --beam_dump <dump.json> --image_dir <images> --out_jso
 # open-vocabulary grounding
 python detector_ground_scorer.py --beam_dump <dump.json> --image_dir <images> --out_jsonl ground_coco.jsonl \
     --entity_vocab <IFCap>/annotations/vocabulary/vgcocooiobjects_v1_class2ind.json
-# beam-internal MBR needs no model and is computed by pilot_mbr_consensus.py
+# beam-internal MBR needs no model: pilot_mbr_consensus.py (submitted version), revision_r1/mbr_train_idf.py (R1)
 ```
 
 `frozen_scorer.py` for SigLIP2, CLIP-L/14 and BLIP-2 ITM, `smallvlm_yesprob_scorer.py` for SmolVLM
@@ -127,6 +140,8 @@ from the same candidates we scored.
 | `revision/` | control studies: BLIP-2 captions in `blip2cap/`, the BLIP-2 caption as a 21st candidate in `m4_*`, the System Two judge in `cot_shard*`, the Flickr-tuned BLIP-ITM checkpoint in `itm_flickr_coco.jsonl` |
 | `reference_results/` | our official metrics, CHAIR, bootstrap and cross-reference outputs |
 | `pilot_*.py`, `analyze_*.py`, `make_*_preds.py` | selection rules and analyses, all CPU |
+| `revision_r1/`, `mbr_trainidf_*.npy` | R1 revision: corrected MBR agent, rebuild of every selection file, human validation, supervision control, cost, factual reliability |
+| `reference_results/official_metrics_r1/` | official metrics of the R1 prediction files |
 | `inference/` | single-image inference, mirrored from the Hugging Face repository, with its verification reports |
 
 Environment variables: `IFCAP_ROOT` is the folder holding `inference_result/`, `data/` by default in

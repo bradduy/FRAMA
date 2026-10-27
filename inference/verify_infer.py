@@ -3,13 +3,14 @@ COCO Karpathy-test images in retrieval order.
 
   python verify_infer.py --ifcap_root <IFCap checkout with annotations and val2014> \
       --ref <folder with coco_beam_dump.json, features.npz, vqascore_coco.jsonl, ground_coco.jsonl,
-             mbr_self_coco.npy, stack6_all_equal__overall.json, stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json> \
+             mbr_trainidf_coco.npy, stack6_all_equal__overall.json, stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json> \
       --n 96
   python verify_infer.py --ifcap_root ... --retrieval_only --n 5000
 
 Retrieval is compared with caption_coco_image_coco_bigG_9.json, the BLIP-ITM step with
 ..._bigG_blip5.json and its entity file, the beam with the stored dump, every agent with its
-released score file, and the final pick with the paper's prediction files.
+released score file, and the final pick with the paper's prediction files. Since the R1 revision the MBR
+reference is mbr_trainidf_coco.npy and the prediction files are those of predictions_r1/coco/.
 """
 import argparse, json, os
 import numpy as np
@@ -51,7 +52,7 @@ else:
     fpos = {str(x): i for i, x in enumerate(npz["image_names"])}
     vqa = {json.loads(l)["image_name"]: json.loads(l)["vqascore"] for l in open(R("vqascore_coco.jsonl"))}
     gro = {json.loads(l)["image_name"]: json.loads(l) for l in open(R("ground_coco.jsonl"))}
-    mbr = np.load(R("mbr_self_coco.npy"))
+    mbr = np.load(R("mbr_trainidf_coco.npy"))  # R1: MBR document frequencies from the training captions
     picks = {c: {p["image_name"]: p["prediction"] for p in json.load(open(R(f)))}
              for c, f in (("six", "stack6_all_equal__overall.json"), ("five", "stack5_noLM_blip_bigG_vqa_mbr_ground__overall.json"))}
 

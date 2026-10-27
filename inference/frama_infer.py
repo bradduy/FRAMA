@@ -363,7 +363,7 @@ def _tok(s):
 
 
 class MbrCider:
-    """CIDEr-D between two candidates, with the paper's fixed n-gram document frequencies."""
+    """CIDEr-D between two candidates, with n-gram document frequencies from the training captions."""
 
     def __init__(self, path):
         d = json.load(gzip.open(path, "rt"))
@@ -395,7 +395,9 @@ class MbrCider:
 
 
 def stage_mbr(recs):
-    cider = MbrCider(os.path.join(ASSETS, "mbr_df_coco_karpathy_test.json.gz"))
+    # Document frequencies from the 566,747 COCO training captions of the captioner. Earlier releases
+    # used frequencies computed on the COCO Karpathy-test references, which leaks test information.
+    cider = MbrCider(os.path.join(ASSETS, "mbr_df_coco_train.json.gz"))
     for r in recs:
         v = [cider.vec(_tok(b["caption"])) for b in r["beam"]]
         K = len(v)

@@ -21,3 +21,9 @@ mbr_self_*.npy
 
 # inference assets, fetched from Hugging Face
 /inference/assets/
+
+# R1 revision outputs
+/preds_r1/
+/revision_r1/factual_reliability/spice_in/
+/revision_r1/factual_reliability/spice_out/
+/revision_r1/factual_reliability/e6c_out/
